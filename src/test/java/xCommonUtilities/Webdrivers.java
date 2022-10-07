@@ -4,12 +4,10 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.opera.OperaDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -23,7 +21,7 @@ public class Webdrivers {
 	public WebDriver getDriver() {
 		return driver;
 	}
-
+	
 	public void setChromeDriverProperty() {
 		System.setProperty("webdriver.chrome.driver", driverFolderPath + "chromedriver.exe");
 	}
@@ -43,8 +41,6 @@ public class Webdrivers {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 	}
-
-	static OperaDriver browser;
 
 	public void setOperaDriverProperty() {
 		System.setProperty("webdriver.opera.driver", driverFolderPath + "operadriver.exe");
