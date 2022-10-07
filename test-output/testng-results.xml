@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-07T12:25:18 SGT" name="Suite" finished-at="2022-10-07T12:25:25 SGT" duration-ms="7013">
+    <groups>
+    </groups>
+    <test started-at="2022-10-07T12:25:18 SGT" name="Test" finished-at="2022-10-07T12:25:25 SGT" duration-ms="7013">
+      <class name="testSetupRunner.TestNGDriverRun">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testSetupRunner.TestNGDriverRun@38c6f217]" started-at="2022-10-07T12:25:18 SGT" name="setup" finished-at="2022-10-07T12:25:19 SGT" duration-ms="1301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test()[pri:0, instance:testSetupRunner.TestNGDriverRun@38c6f217]" started-at="2022-10-07T12:25:19 SGT" name="test" finished-at="2022-10-07T12:25:25 SGT" duration-ms="5396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="stop()[pri:0, instance:testSetupRunner.TestNGDriverRun@38c6f217]" started-at="2022-10-07T12:25:25 SGT" name="stop" finished-at="2022-10-07T12:25:25 SGT" duration-ms="279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stop -->
+      </class> <!-- testSetupRunner.TestNGDriverRun -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
