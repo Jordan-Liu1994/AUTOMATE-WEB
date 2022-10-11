@@ -17,9 +17,9 @@
 	<test thread-count="3" name="Test">
 		<groups>
 			<run>
-				<exclude name="login"></exclude>
-				<exclude name="logout"></exclude>
-				<!-- <exclude name="register"></exclude> -->
+				<!-- <exclude name="login"></exclude>
+				<exclude name="logout"></exclude> -->
+				<exclude name="register"></exclude>
 			</run>
 		</groups>
 		<classes>

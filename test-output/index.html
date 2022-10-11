@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,7 +109,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="xRunners.Register" class="method navigator-link" hash-for-method="register">register</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="xRunners.LoginAndLogout" class="method navigator-link" hash-for-method="login(qctestergame001, test123)">login(qctestergame001, test123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="xRunners.LoginAndLogout" class="method navigator-link" hash-for-method="logout(qctestergame001)">logout(qctestergame001)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -127,21 +132,6 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">xRunners.Register</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="register">
-                  </a> <!-- register -->
-                  <span class="method-name">register</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">xRunners.LoginAndLogout</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -151,6 +141,22 @@
                   </a> <!-- goToSite(https://wltestmembersite.the777888.com) -->
                   <span class="method-name">goToSite</span>
                   <span class="parameters">(https://wltestmembersite.the777888.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(qctestergame001, test123)">
+                  </a> <!-- login(qctestergame001, test123) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(qctestergame001, test123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logout(qctestergame001)">
+                  </a> <!-- logout(qctestergame001) -->
+                  <span class="method-name">logout</span>
+                  <span class="parameters">(qctestergame001)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -176,8 +182,7 @@
   &lt;test thread-count=&quot;3&quot; name=&quot;Test&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;exclude name=&quot;login&quot;/&gt;
-        &lt;exclude name=&quot;logout&quot;/&gt;
+        &lt;exclude name=&quot;register&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -208,10 +213,18 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">register</span>
+              <span class="test-group-name">login</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">register</span>
+                <span class="method-in-group-name">login</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">logout</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">logout</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -231,20 +244,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'register')
-data.setCell(0, 2, 'xRunners.Register')
-data.setCell(0, 3, 6582);
+data.setCell(0, 1, 'login')
+data.setCell(0, 2, 'xRunners.LoginAndLogout')
+data.setCell(0, 3, 4696);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'goToSite')
+data.setCell(1, 1, 'logout')
 data.setCell(1, 2, 'xRunners.LoginAndLogout')
-data.setCell(1, 3, 2757);
+data.setCell(1, 3, 4028);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'goToSite')
+data.setCell(2, 2, 'xRunners.LoginAndLogout')
+data.setCell(2, 3, 3018);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -259,15 +276,13 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">xRunners.LoginAndLogout</span>
+              <span class="ignored-class-name">xRunners.Register</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">logout</span>
-                <br/>
-                <span class="ignored-method-name">login</span>
+                <span class="ignored-method-name">register</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -289,29 +304,34 @@ return data;
               <div class="chronological-class-name">xRunners.LoginAndLogout</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">goToSite(https://wltestmembersite.the777888.com)</span>
-                <span class="method-start">1757 ms</span>
+                <span class="method-start">2249 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logStatus([TestResult name=goToSite status=SUCCESS method=LoginAndLogout.goToSite(java.lang.String)[pri:0, ins...)</span>
-                <span class="method-start">4519 ms</span>
+                <span class="method-start">5272 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">xRunners.Register</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">register</span>
-                <span class="method-start">4528 ms</span>
+                <span class="method-name">login(qctestergame001, test123)</span>
+                <span class="method-start">5284 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">logStatus([TestResult name=register status=SUCCESS method=Register.register()[pri:0, instance:xRunners.Registe...)</span>
-                <span class="method-start">11111 ms</span>
+                <span class="method-name">logStatus([TestResult name=login status=SUCCESS method=LoginAndLogout.login(java.lang.String,java.lang.String)...)</span>
+                <span class="method-start">9981 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">logout(qctestergame001)</span>
+                <span class="method-start">9984 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logStatus([TestResult name=logout status=SUCCESS method=LoginAndLogout.logout(java.lang.String)[pri:2, instanc...)</span>
+                <span class="method-start">14013 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">xSetups.Setup</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11134 ms</span>
+                <span class="method-start">14032 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
