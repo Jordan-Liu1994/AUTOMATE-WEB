@@ -3,6 +3,7 @@ package xFunctions;
 import javax.security.auth.login.FailedLoginException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 
 import xCommonUtilities.ActionBuilder;
@@ -29,15 +30,20 @@ public class SelectGameCategoryAndVendorF {
 	}
 
 	public void selectSlotsGameVendor(String gameVendor) throws FailedLoginException {
-		driver.setTimeOut();
-		WebElement element = driver.getDriver().findElement(By.xpath("(//div[contains(@class,'content_block')])[" + gameVendor + "]"));
-		String elementText = element.getText();
-		if (element.isDisplayed()) {
-			actionBuilder.moveToElement(element);
-			generateReports.setExtentTestInfo(elementText);
-		} else {
-			generateReports.setExtentTestFail(elementText);
-			throw new FailedLoginException();
+		try {
+			driver.setTimeOut();
+			WebElement element = driver.getDriver().findElement(By.xpath("(//div[contains(@class,'content_block')])[" + gameVendor + "]"));
+			String elementText = element.getText();
+			if (element.isDisplayed()) {
+				actionBuilder.moveToElement(element);
+				generateReports.setExtentTestInfo(elementText);
+			} else {
+				generateReports.setExtentTestFail(elementText);
+				throw new FailedLoginException();
+			}
+		} catch (NoSuchElementException e) {
+			e.printStackTrace();
+			generateReports.setExtentTestSkip(gameVendor + " skip");
 		}
 	}
 }

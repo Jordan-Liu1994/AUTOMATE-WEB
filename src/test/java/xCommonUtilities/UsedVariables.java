@@ -4,6 +4,7 @@ import xFunctions.LoginF;
 import xFunctions.LogoutF;
 import xFunctions.RegisterF;
 import xFunctions.SelectGameCategoryAndVendorF;
+import xFunctions.SelectSlotsGameAndBetF;
 import xFunctions.StartDrivers;
 
 public class UsedVariables {
@@ -18,5 +19,5 @@ public class UsedVariables {
 	protected LogoutF logoutF = new LogoutF();
 	protected RegisterF registerF = new RegisterF();
 	protected SelectGameCategoryAndVendorF selectGameCategoryAndVendorF = new SelectGameCategoryAndVendorF();
-
+	protected SelectSlotsGameAndBetF selectSlotsGameAndBetF = new SelectSlotsGameAndBetF();
 }

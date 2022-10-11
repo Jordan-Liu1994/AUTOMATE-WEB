@@ -73,6 +73,10 @@ public class Webdrivers {
 	public void setTimeOut() {
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	}
+	
+	public void setWindowMaximized() {
+		driver.manage().window().maximize();
+	}
 
 	public void setWait(WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, 15);
