@@ -36,7 +36,5 @@ public class SelectSlotsGameAndBetF {
 			e.printStackTrace();
 			generateReports.setExtentTestSkip(game + " skip");
 		}
-		iterateWindow.iterateToGameWindow();
-		iterateWindow.iterateToMainWindow(parentWindow);
 	}
 }

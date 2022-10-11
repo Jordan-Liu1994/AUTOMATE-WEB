@@ -15,7 +15,7 @@ public class SelectLiveGameVendorMG extends UsedVariables {
 		generateReports.createTest("selectSlotsGameVendor");
 		selectGameCategoryAndVendorF.selectLiveGameVendor(gameVendor);
 		parentWindow = driver.getDriver().getWindowHandle();
-		iterateWindow.iterateToGameWindow();
+		iterateWindow.iterateToSecondWindow();
 		iterateWindow.iterateToMainWindow(parentWindow);
 	}
 }

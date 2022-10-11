@@ -13,14 +13,14 @@ public class SelectLiveGameVendorBBIN extends UsedVariables {
 		generateReports.createTest("selectSlotsGameVendor");
 		selectGameCategoryAndVendorF.selectLiveGameVendor(gameVendor);
 		parentWindow = driver.getDriver().getWindowHandle();
-		iterateWindow.iterateToGameWindow();
+		iterateWindow.iterateToSecondWindow();
 		Thread.sleep(5000);
 		selectLiveBBINGameF.hoverGame();
 		selectLiveBBINGameF.selectGame();
-		iterateWindow.iterateToInGameWindow();
+		iterateWindow.iterateToThirdWindow();
 		Thread.sleep(5000);
 		liveBBINBettingF.doLiveBBINBet();
-		iterateWindow.iterateToInBetRecordWindow();
+		iterateWindow.iterateToFourthWindow();
 		iterateWindow.screenShotFinalWindow(gameVendor);
 	}
 }

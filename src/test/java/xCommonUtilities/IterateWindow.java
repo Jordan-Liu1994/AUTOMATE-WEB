@@ -12,7 +12,12 @@ public class IterateWindow {
 	String betRecordWindow;
 	String betResult;
 
-	public void iterateToGameWindow() {
+	public void iterateToSecondWindow() {
+		try {
+			Thread.sleep(1500);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		startGameWindow = driver.getDriver().getWindowHandles().toArray()[1].toString();
 		driver.getDriver().switchTo().window(startGameWindow);
 		driver.setWindowMaximized();
@@ -20,7 +25,12 @@ public class IterateWindow {
 		System.out.println("Switch to " + startGameWindow);
 	}
 
-	public void iterateToInGameWindow() {
+	public void iterateToThirdWindow() {
+		try {
+			Thread.sleep(1500);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		gameSelectWindow = driver.getDriver().getWindowHandles().toArray()[2].toString();
 		driver.getDriver().switchTo().window(gameSelectWindow);
 		driver.setWindowMaximized();
@@ -28,7 +38,12 @@ public class IterateWindow {
 		System.out.println("Switch to " + gameSelectWindow);
 	}
 
-	public void iterateToInBetRecordWindow() {
+	public void iterateToFourthWindow() {
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		betWindow = driver.getDriver().getWindowHandles().toArray()[3].toString();
 		driver.getDriver().switchTo().window(betWindow);
 		driver.setWindowMaximized();
@@ -46,5 +61,14 @@ public class IterateWindow {
 	public void iterateToMainWindow(String parentWindowHandle) {
 		driver.getDriver().switchTo().window(parentWindowHandle);
 		driver.setTimeOut();
+	}
+	
+	public void closeWindowsTillMain() {
+		driver.getDriver().switchTo().window(betWindow);
+		driver.closeBrowser();
+		driver.getDriver().switchTo().window(gameSelectWindow);
+		driver.closeBrowser();
+		driver.getDriver().switchTo().window(startGameWindow);
+		driver.closeBrowser();
 	}
 }
