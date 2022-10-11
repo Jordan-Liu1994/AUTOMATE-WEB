@@ -1,7 +1,5 @@
 package xFunctions;
 
-import java.util.ArrayList;
-
 import javax.security.auth.login.FailedLoginException;
 
 import org.openqa.selenium.By;
@@ -22,31 +20,23 @@ public class SelectSlotsGameAndBetF {
 
 	String parentWindow;
 
-	public void selectSlotsGame(String game1, String game2, String game3) throws FailedLoginException {
+	public void selectSlotsGame(String game) throws FailedLoginException {
 		parentWindow = driver.getDriver().getWindowHandle();
 		System.out.println("In " + parentWindow);
 
-		ArrayList<String> gameList = new ArrayList<String>();
-		gameList.add(game1);
-		gameList.add(game2);
-		gameList.add(game3);
-
-		for (int i = 0; i <= 2; i++) {
-			String game = gameList.get(i);
-			try {
-				driver.setTimeOut();
-				WebElement element = driver.getDriver().findElement(By.xpath("//div[contains(text(),'" + game + "')]"));
-				String elementText = element.getText();
-				if (element.isDisplayed()) {
-					actionBuilder.moveToElement(element);
-					generateReports.setExtentTestInfo(elementText);
-				}
-			} catch (NoSuchElementException e) {
-				e.printStackTrace();
-				generateReports.setExtentTestSkip(game + " skip");
+		try {
+			driver.setTimeOut();
+			WebElement element = driver.getDriver().findElement(By.xpath("//div[contains(text(),'" + game + "')]"));
+			String elementText = element.getText();
+			if (element.isDisplayed()) {
+				actionBuilder.moveToElement(element);
+				generateReports.setExtentTestInfo(elementText);
 			}
-			iterateWindow.iterateToGameWindow();
-			iterateWindow.iterateToMainWindow(parentWindow);
+		} catch (NoSuchElementException e) {
+			e.printStackTrace();
+			generateReports.setExtentTestSkip(game + " skip");
 		}
+		iterateWindow.iterateToGameWindow();
+		iterateWindow.iterateToMainWindow(parentWindow);
 	}
 }
