@@ -20,4 +20,7 @@ public class UsedVariables {
 	protected RegisterF registerF = new RegisterF();
 	protected SelectGameCategoryAndVendorF selectGameCategoryAndVendorF = new SelectGameCategoryAndVendorF();
 	protected SelectSlotsGameAndBetF selectSlotsGameAndBetF = new SelectSlotsGameAndBetF();
+	protected IterateWindow iterateWindow = new IterateWindow();
+	
+	protected static String parentWindow;
 }

@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-	<parameter name="reportName" value="SlotsCQ9"></parameter>
+	<parameter name="reportName" value="LiveBBIN"></parameter>
 	<parameter name="platform" value="WEB"></parameter>
 	<parameter name="javaVersion" value="17 JDK"></parameter>
 	<parameter name="user" value="Jordan"></parameter>
@@ -14,24 +14,21 @@
 	<parameter name="url"
 		value="https://wltestmembersite.the777888.com"></parameter>
 
-	<parameter name="number" value="3"></parameter>
-	<parameter name="gameVendor" value="6"></parameter>
-	<parameter name="game1" value="鸿福齐天"></parameter>
-	<parameter name="game2" value="甜蜜蜜"></parameter>
-	<parameter name="game3" value="金大款"></parameter>
+	<parameter name="number" value="4"></parameter>
+	<parameter name="gameVendor" value="BBIN"></parameter>
 
 	<test thread-count="3" name="Test">
 		<groups>
 			<run>
 				<exclude name="logout"></exclude>
-				<!-- <exclude name="CQ9 Slots"></exclude> -->
+				<!-- <exclude name="mg"></exclude> -->
 			</run>
 		</groups>
 		<classes>
 			<class name="xSetups.Setup" />
 			<class name="xRunnersAuthentication.LoginAndLogout" />
 			<class name="xRunnersGames.SelectGameCategory" />
-			<class name="xRunnersGames.SelectSlotsGameVendorCQ9" />
+			<class name="xRunnersGames.SelectLiveGameVendorBBIN" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

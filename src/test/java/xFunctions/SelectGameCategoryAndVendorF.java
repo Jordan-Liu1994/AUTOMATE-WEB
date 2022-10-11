@@ -46,4 +46,22 @@ public class SelectGameCategoryAndVendorF {
 			generateReports.setExtentTestSkip(gameVendor + " skip");
 		}
 	}
+
+	public void selectLiveGameVendor(String gameVendor) throws FailedLoginException {
+		try {
+			driver.setTimeOut();
+			WebElement element = driver.getDriver().findElement(By.xpath("(//div[contains(text(),'" + gameVendor + "')])[2]"));
+			String elementText = element.getText();
+			if (element.isDisplayed()) {
+				actionBuilder.moveToElement(element);
+				generateReports.setExtentTestInfo(elementText);
+			} else {
+				generateReports.setExtentTestFail(elementText);
+				throw new FailedLoginException();
+			}
+		} catch (NoSuchElementException e) {
+			e.printStackTrace();
+			generateReports.setExtentTestSkip(gameVendor + " skip");
+		}
+	}
 }

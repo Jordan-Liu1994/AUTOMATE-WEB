@@ -7,9 +7,9 @@ import org.testng.annotations.Test;
 
 import xCommonUtilities.UsedVariables;
 
-public class SelectSlotsGameVendorCQ9 extends UsedVariables {
+public class SelectSlotsGameVendorMG extends UsedVariables {
 
-	@Test(priority = 0, groups = { "CQ9 Slots" })
+	@Test(priority = 0, groups = { "MG Slots" })
 	@Parameters({ "gameVendor", "game1", "game2", "game3" })
 	public void selectSlotsGameVendor(String gameVendor, String game1, String game2, String game3) throws FailedLoginException {
 		generateReports.createTest("selectSlotsGameVendor");

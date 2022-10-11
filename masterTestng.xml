@@ -14,7 +14,8 @@
 		value="https://wltestmembersite.the777888.com"></parameter>
 
 	<suite-files>
-		<suite-file path="games\authenticationTestng.xml"></suite-file>
+		<suite-file path="authentication\authenticationTestng.xml"></suite-file>
 		<suite-file path="games\slotsCQ9Testng.xml"></suite-file>
+		<suite-file path="games\slotsMGTestng.xml"></suite-file>
 	</suite-files>
 </suite> <!-- Suite -->
