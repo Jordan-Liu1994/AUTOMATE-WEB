@@ -23,4 +23,9 @@ public class Setup extends UsedVariables {
 		driver.stopDriver();
 		generateReports.flushReport();
 	}
+	
+	@AfterMethod
+	public void logStatus(ITestResult result) {
+		logStatus.logStatus(result);
+	}
 }

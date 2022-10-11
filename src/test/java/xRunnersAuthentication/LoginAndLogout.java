@@ -1,4 +1,4 @@
-package xRunners;
+package xRunnersAuthentication;
 
 import javax.security.auth.login.FailedLoginException;
 
@@ -37,10 +37,5 @@ public class LoginAndLogout extends UsedVariables {
 		logoutF.setHoverUsername(username);
 		logoutF.selectLogout();
 		logoutF.getVerifyLogout();
-	}
-
-	@AfterMethod
-	public void logStatus(ITestResult result) {
-		logStatus.logStatus(result);
 	}
 }

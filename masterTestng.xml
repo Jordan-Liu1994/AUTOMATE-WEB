@@ -2,7 +2,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-	<parameter name="reportName" value="Authentication"></parameter>
 	<parameter name="platform" value="WEB"></parameter>
 	<parameter name="javaVersion" value="17 JDK"></parameter>
 	<parameter name="user" value="Jordan"></parameter>
@@ -14,18 +13,7 @@
 	<parameter name="url"
 		value="https://wltestmembersite.the777888.com"></parameter>
 
-	<test thread-count="3" name="Test">
-		<groups>
-			<run>
-				<!-- <exclude name="login"></exclude>
-				<exclude name="logout"></exclude> -->
-				<exclude name="register"></exclude>
-			</run>
-		</groups>
-		<classes>
-			<class name="xSetups.Setup" />
-			<class name="xRunners.LoginAndLogout" />
-			<class name="xRunners.Register" />
-		</classes>
-	</test> <!-- Test -->
+	<suite-files>
+		<suite-file path="authenticationTestng.xml"></suite-file>
+	</suite-files>
 </suite> <!-- Suite -->

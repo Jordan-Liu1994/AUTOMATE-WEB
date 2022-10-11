@@ -1,4 +1,4 @@
-package xRunners;
+package xRunnersAuthentication;
 
 import javax.security.auth.login.FailedLoginException;
 
@@ -21,10 +21,5 @@ public class Register extends UsedVariables {
 		registerF.setCaptcha();
 		registerF.selectRegister();
 		registerF.getVerifyRegister();
-	}
-
-	@AfterMethod
-	public void logStatus(ITestResult result) {
-		logStatus.logStatus(result);
 	}
 }

@@ -3,6 +3,7 @@ package xFunctions;
 import javax.security.auth.login.FailedLoginException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 
 import xCommonUtilities.GenerateRandomNumbers;
@@ -14,13 +15,13 @@ public class RegisterF {
 	Webdrivers driver = new Webdrivers();
 	GenerateReports generateReports = new GenerateReports();
 	GenerateRandomNumbers generateRandomNumbers = new GenerateRandomNumbers();
-	
+
 	static String attribute = "placeholder";
 	static String space = " - ";
 	static String username;
 	static String password = "test123";
 	static String captcha = "123456";
-	
+
 	public void selectRegisterOption() throws FailedLoginException {
 		driver.setTimeOut();
 		WebElement element = driver.getDriver().findElement(By.id("header_register"));
@@ -63,15 +64,20 @@ public class RegisterF {
 	}
 
 	public void setCaptcha() {
-		driver.setTimeOut();
-		WebElement element = driver.getDriver().findElement(By.id("ipt_code3"));
-		String elementText = element.getAttribute(attribute);
-		if (element.isDisplayed()) {
-			element.clear();
-			element.sendKeys(captcha);
-			generateReports.setExtentTestInfo(elementText + space + captcha);
-		} else {
-			generateReports.setExtentTestFail(elementText);
+		try {
+			driver.setTimeOut();
+			WebElement element = driver.getDriver().findElement(By.id("ipt_code3"));
+			String elementText = element.getAttribute(attribute);
+			if (element.isDisplayed()) {
+				element.clear();
+				element.sendKeys(captcha);
+				generateReports.setExtentTestInfo(elementText + space + captcha);
+			} else {
+				generateReports.setExtentTestFail(elementText);
+			}
+		} catch (NoSuchElementException e) {
+			e.printStackTrace();
+			generateReports.setExtentTestSkip("captcha skip");
 		}
 	}
 

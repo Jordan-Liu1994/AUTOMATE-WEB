@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="number" value="3"/>
   <parameter name="password" value="test123"/>
   <parameter name="reportName" value="Authentication"/>
   <parameter name="javaVersion" value="17 JDK"/>
@@ -16,12 +17,11 @@
       </run>
     </groups>
     <classes>
-      <class name="xRunners.Register">
+      <class name="xRunnersGames.SelectGameCategory">
         <methods>
-          <include name="register"/>
-          <include name="logStatus"/>
+          <include name="selectGameCategory" invocation-numbers="0"/>
         </methods>
-      </class> <!-- xRunners.Register -->
+      </class> <!-- xRunnersGames.SelectGameCategory -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

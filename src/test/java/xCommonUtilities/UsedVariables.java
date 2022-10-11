@@ -3,6 +3,7 @@ package xCommonUtilities;
 import xFunctions.LoginF;
 import xFunctions.LogoutF;
 import xFunctions.RegisterF;
+import xFunctions.SelectGameCategoryAndVendorF;
 import xFunctions.StartDrivers;
 
 public class UsedVariables {
@@ -16,5 +17,6 @@ public class UsedVariables {
 	protected LoginF loginF = new LoginF();
 	protected LogoutF logoutF = new LogoutF();
 	protected RegisterF registerF = new RegisterF();
+	protected SelectGameCategoryAndVendorF selectGameCategoryAndVendorF = new SelectGameCategoryAndVendorF();
 
 }
