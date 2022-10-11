@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
+<testng-results ignored="1" total="9" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-11T11:44:02 SGT" name="Suite" finished-at="2022-10-11T11:44:25 SGT" duration-ms="22865">
+  <suite started-at="2022-10-11T11:47:30 SGT" name="Suite" finished-at="2022-10-11T11:47:30 SGT" duration-ms="0">
+    <groups>
+    </groups>
+  </suite> <!-- Suite -->
+  <suite started-at="2022-10-11T11:47:15 SGT" name="Suite (1)" finished-at="2022-10-11T11:47:28 SGT" duration-ms="12733">
     <groups>
       <group name="login">
-        <method signature="LoginAndLogout.login(java.lang.String,java.lang.String)[pri:1, instance:xRunnersAuthentication.LoginAndLogout@35d019a3]" name="login" class="xRunnersAuthentication.LoginAndLogout"/>
+        <method signature="LoginAndLogout.login(java.lang.String,java.lang.String)[pri:1, instance:xRunnersAuthentication.LoginAndLogout@1d296da]" name="login" class="xRunnersAuthentication.LoginAndLogout"/>
       </group> <!-- login -->
     </groups>
-    <test started-at="2022-10-11T11:44:02 SGT" name="Test" finished-at="2022-10-11T11:44:25 SGT" duration-ms="22865">
+    <test started-at="2022-10-11T11:47:15 SGT" name="Test" finished-at="2022-10-11T11:47:28 SGT" duration-ms="12733">
       <class name="xRunnersGames.SelectGameCategory">
-        <test-method signature="selectGameCategory(java.lang.String)[pri:0, instance:xRunnersGames.SelectGameCategory@689604d9]" started-at="2022-10-11T11:44:13 SGT" name="selectGameCategory" finished-at="2022-10-11T11:44:15 SGT" duration-ms="2547" status="PASS">
+        <test-method signature="selectGameCategory(java.lang.String)[pri:0, instance:xRunnersGames.SelectGameCategory@557caf28]" started-at="2022-10-11T11:47:22 SGT" name="selectGameCategory" finished-at="2022-10-11T11:47:24 SGT" duration-ms="2157" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +27,7 @@
         </test-method> <!-- selectGameCategory -->
       </class> <!-- xRunnersGames.SelectGameCategory -->
       <class name="xSetups.Setup">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:xSetups.Setup@747ddf94]" started-at="2022-10-11T11:44:00 SGT" name="setup" finished-at="2022-10-11T11:44:02 SGT" duration-ms="1767" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:xSetups.Setup@776aec5c]" started-at="2022-10-11T11:47:15 SGT" name="setup" finished-at="2022-10-11T11:47:15 SGT" duration-ms="787" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -54,13 +58,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:xSetups.Setup@747ddf94]" started-at="2022-10-11T11:44:25 SGT" name="tearDown" finished-at="2022-10-11T11:44:26 SGT" duration-ms="1558" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:xSetups.Setup@776aec5c]" started-at="2022-10-11T11:47:28 SGT" name="tearDown" finished-at="2022-10-11T11:47:30 SGT" duration-ms="2196" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- xSetups.Setup -->
       <class name="xRunnersGames.SelectSlotsGameVendorCQ9">
-        <test-method signature="selectSlotsGameVendor(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:xRunnersGames.SelectSlotsGameVendorCQ9@18078bef]" started-at="2022-10-11T11:44:15 SGT" name="selectSlotsGameVendor" finished-at="2022-10-11T11:44:25 SGT" duration-ms="9447" status="PASS">
+        <test-method signature="selectSlotsGameVendor(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:xRunnersGames.SelectSlotsGameVendorCQ9@408d971b]" started-at="2022-10-11T11:47:24 SGT" name="selectSlotsGameVendor" finished-at="2022-10-11T11:47:28 SGT" duration-ms="3647" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -88,7 +92,7 @@
         </test-method> <!-- selectSlotsGameVendor -->
       </class> <!-- xRunnersGames.SelectSlotsGameVendorCQ9 -->
       <class name="xRunnersAuthentication.LoginAndLogout">
-        <test-method signature="goToSite(java.lang.String)[pri:0, instance:xRunnersAuthentication.LoginAndLogout@35d019a3]" started-at="2022-10-11T11:44:02 SGT" name="goToSite" finished-at="2022-10-11T11:44:05 SGT" duration-ms="3054" status="PASS">
+        <test-method signature="goToSite(java.lang.String)[pri:0, instance:xRunnersAuthentication.LoginAndLogout@1d296da]" started-at="2022-10-11T11:47:15 SGT" name="goToSite" finished-at="2022-10-11T11:47:18 SGT" duration-ms="2562" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -99,7 +103,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToSite -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:xRunnersAuthentication.LoginAndLogout@35d019a3]" started-at="2022-10-11T11:44:05 SGT" name="login" finished-at="2022-10-11T11:44:13 SGT" duration-ms="7768" status="PASS">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:xRunnersAuthentication.LoginAndLogout@1d296da]" started-at="2022-10-11T11:47:18 SGT" name="login" finished-at="2022-10-11T11:47:22 SGT" duration-ms="4352" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,5 +121,103 @@
         </test-method> <!-- login -->
       </class> <!-- xRunnersAuthentication.LoginAndLogout -->
     </test> <!-- Test -->
-  </suite> <!-- Suite -->
+  </suite> <!-- Suite (1) -->
+  <suite started-at="2022-10-11T11:46:38 SGT" name="Suite (0)" finished-at="2022-10-11T11:47:13 SGT" duration-ms="35369">
+    <groups>
+      <group name="logout">
+        <method signature="LoginAndLogout.logout(java.lang.String)[pri:2, instance:xRunnersAuthentication.LoginAndLogout@689604d9]" name="logout" class="xRunnersAuthentication.LoginAndLogout"/>
+      </group> <!-- logout -->
+      <group name="login">
+        <method signature="LoginAndLogout.login(java.lang.String,java.lang.String)[pri:1, instance:xRunnersAuthentication.LoginAndLogout@689604d9]" name="login" class="xRunnersAuthentication.LoginAndLogout"/>
+      </group> <!-- login -->
+      <group name="register">
+        <method signature="Register.register()[pri:0, instance:xRunnersAuthentication.Register@18078bef]" name="register" class="xRunnersAuthentication.Register"/>
+      </group> <!-- register -->
+    </groups>
+    <test started-at="2022-10-11T11:46:38 SGT" name="Test" finished-at="2022-10-11T11:47:13 SGT" duration-ms="35369">
+      <class name="xSetups.Setup">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:xSetups.Setup@35e2d654]" started-at="2022-10-11T11:46:36 SGT" name="setup" finished-at="2022-10-11T11:46:38 SGT" duration-ms="1732" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Authentication]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[WEB]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[17 JDK]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Jordan]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:xSetups.Setup@35e2d654]" started-at="2022-10-11T11:47:13 SGT" name="tearDown" finished-at="2022-10-11T11:47:15 SGT" duration-ms="1505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- xSetups.Setup -->
+      <class name="xRunnersAuthentication.Register">
+        <test-method signature="register()[pri:0, instance:xRunnersAuthentication.Register@18078bef]" started-at="2022-10-11T11:46:48 SGT" name="register" finished-at="2022-10-11T11:47:13 SGT" duration-ms="24765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+      </class> <!-- xRunnersAuthentication.Register -->
+      <class name="xRunnersAuthentication.LoginAndLogout">
+        <test-method signature="goToSite(java.lang.String)[pri:0, instance:xRunnersAuthentication.LoginAndLogout@689604d9]" started-at="2022-10-11T11:46:38 SGT" name="goToSite" finished-at="2022-10-11T11:46:41 SGT" duration-ms="2825" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://wltestmembersite.the777888.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToSite -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:xRunnersAuthentication.LoginAndLogout@689604d9]" started-at="2022-10-11T11:46:41 SGT" name="login" finished-at="2022-10-11T11:46:46 SGT" duration-ms="5196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qctestergame001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="logout(java.lang.String)[pri:2, instance:xRunnersAuthentication.LoginAndLogout@689604d9]" started-at="2022-10-11T11:46:46 SGT" name="logout" finished-at="2022-10-11T11:46:48 SGT" duration-ms="2533" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qctestergame001]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- xRunnersAuthentication.LoginAndLogout -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite (0) -->
 </testng-results>
