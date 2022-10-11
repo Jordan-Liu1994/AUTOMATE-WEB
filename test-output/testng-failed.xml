@@ -6,7 +6,7 @@
   <parameter name="reportName" value="LiveBBIN"/>
   <parameter name="javaVersion" value="17 JDK"/>
   <parameter name="browser" value="chrome"/>
-  <parameter name="gameVendor" value="MG"/>
+  <parameter name="gameVendor" value="BBIN"/>
   <parameter name="user" value="Jordan"/>
   <parameter name="platform" value="WEB"/>
   <parameter name="url" value="https://wltestmembersite.the777888.com"/>
@@ -18,11 +18,11 @@
       </run>
     </groups>
     <classes>
-      <class name="xRunnersGames.SelectLiveGameVendorMG">
+      <class name="xRunnersGames.SelectLiveGameVendorBBIN">
         <methods>
           <include name="selectLiveGameVendorBBIN" invocation-numbers="0"/>
         </methods>
-      </class> <!-- xRunnersGames.SelectLiveGameVendorMG -->
+      </class> <!-- xRunnersGames.SelectLiveGameVendorBBIN -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

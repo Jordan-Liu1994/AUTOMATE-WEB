@@ -21,7 +21,7 @@ public class SelectGameCategoryAndVendorF {
 		WebElement element = driver.getDriver().findElement(By.xpath("(//div[@class='header_menu_item'])[" + number + "]"));
 		String elementText = element.getText();
 		if (element.isDisplayed()) {
-			actionBuilder.moveToElement(element);
+			actionBuilder.moveToElementAndClick(element);
 			generateReports.setExtentTestInfo(elementText);
 		} else {
 			generateReports.setExtentTestFail(elementText);
@@ -35,7 +35,7 @@ public class SelectGameCategoryAndVendorF {
 			WebElement element = driver.getDriver().findElement(By.xpath("(//div[contains(@class,'content_block')])[" + gameVendor + "]"));
 			String elementText = element.getText();
 			if (element.isDisplayed()) {
-				actionBuilder.moveToElement(element);
+				actionBuilder.moveToElementAndClick(element);
 				generateReports.setExtentTestInfo(elementText);
 			} else {
 				generateReports.setExtentTestFail(elementText);
@@ -53,7 +53,7 @@ public class SelectGameCategoryAndVendorF {
 			WebElement element = driver.getDriver().findElement(By.xpath("(//div[contains(text(),'" + gameVendor + "')])[2]"));
 			String elementText = element.getText();
 			if (element.isDisplayed()) {
-				actionBuilder.moveToElement(element);
+				actionBuilder.moveToElementAndClick(element);
 				generateReports.setExtentTestInfo(elementText);
 			} else {
 				generateReports.setExtentTestFail(elementText);

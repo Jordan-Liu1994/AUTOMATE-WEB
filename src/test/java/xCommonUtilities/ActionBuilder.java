@@ -9,6 +9,11 @@ public class ActionBuilder {
 
 	public void moveToElement(WebElement element) {
 		Actions builder = new Actions(driver.getDriver());
+		builder.moveToElement(element).build().perform();
+	}
+	
+	public void moveToElementAndClick(WebElement element) {
+		Actions builder = new Actions(driver.getDriver());
 		builder.moveToElement(element).click().build().perform();
 	}
 }

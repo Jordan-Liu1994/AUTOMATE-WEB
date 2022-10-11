@@ -29,7 +29,7 @@ public class SelectSlotsGameAndBetF {
 			WebElement element = driver.getDriver().findElement(By.xpath("//div[contains(text(),'" + game + "')]"));
 			String elementText = element.getText();
 			if (element.isDisplayed()) {
-				actionBuilder.moveToElement(element);
+				actionBuilder.moveToElementAndClick(element);
 				generateReports.setExtentTestInfo(elementText);
 			}
 		} catch (NoSuchElementException e) {

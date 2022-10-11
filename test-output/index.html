@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\Eclipse WorkSpace\AUTOMATE-WEB\games\liveMGTestng.xml</span>
+                    <span>D:\Eclipse WorkSpace\AUTOMATE-WEB\games\liveBBINTestng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -119,7 +119,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="xRunnersGames.SelectLiveGameVendorMG" class="method navigator-link" hash-for-method="selectLiveGameVendorBBIN(MG 真人)">selectLiveGameVendorBBIN(MG 真人)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="xRunnersGames.SelectLiveGameVendorBBIN" class="method navigator-link" hash-for-method="selectLiveGameVendorBBIN(BBIN)">selectLiveGameVendorBBIN(BBIN)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -137,15 +137,15 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">xRunnersGames.SelectLiveGameVendorMG</span>
+              <span class="class-name">xRunnersGames.SelectLiveGameVendorBBIN</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="selectLiveGameVendorBBIN(MG 真人)">
-                  </a> <!-- selectLiveGameVendorBBIN(MG 真人) -->
+                  <a name="selectLiveGameVendorBBIN(BBIN)">
+                  </a> <!-- selectLiveGameVendorBBIN(BBIN) -->
                   <span class="method-name">selectLiveGameVendorBBIN</span>
-                  <span class="parameters">(MG 真人)</span>
+                  <span class="parameters">(BBIN)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -193,7 +193,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Eclipse WorkSpace\AUTOMATE-WEB\games\liveMGTestng.xml</span>
+            <span class="header-content">D:\Eclipse WorkSpace\AUTOMATE-WEB\games\liveBBINTestng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -202,10 +202,10 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;parameter name=&quot;number&quot; value=&quot;4&quot;/&gt;
   &lt;parameter name=&quot;password&quot; value=&quot;test123&quot;/&gt;
-  &lt;parameter name=&quot;reportName&quot; value=&quot;LiveMG&quot;/&gt;
+  &lt;parameter name=&quot;reportName&quot; value=&quot;LiveBBIN&quot;/&gt;
   &lt;parameter name=&quot;javaVersion&quot; value=&quot;17 JDK&quot;/&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-  &lt;parameter name=&quot;gameVendor&quot; value=&quot;MG 真人&quot;/&gt;
+  &lt;parameter name=&quot;gameVendor&quot; value=&quot;BBIN&quot;/&gt;
   &lt;parameter name=&quot;user&quot; value=&quot;Jordan&quot;/&gt;
   &lt;parameter name=&quot;platform&quot; value=&quot;WEB&quot;/&gt;
   &lt;parameter name=&quot;url&quot; value=&quot;https://wltestmembersite.the777888.com&quot;/&gt;
@@ -220,7 +220,7 @@
       &lt;class name=&quot;xSetups.Setup&quot;/&gt;
       &lt;class name=&quot;xRunnersAuthentication.LoginAndLogout&quot;/&gt;
       &lt;class name=&quot;xRunnersGames.SelectGameCategory&quot;/&gt;
-      &lt;class name=&quot;xRunnersGames.SelectLiveGameVendorMG&quot;/&gt;
+      &lt;class name=&quot;xRunnersGames.SelectLiveGameVendorBBIN&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -245,7 +245,7 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">MG Live</span>
+              <span class="test-group-name">BBIN Live</span>
               <br/>
               <div class="method-in-group">
                 <span class="method-in-group-name">selectLiveGameVendorBBIN</span>
@@ -278,26 +278,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'login')
-data.setCell(0, 2, 'xRunnersAuthentication.LoginAndLogout')
-data.setCell(0, 3, 5481);
+data.setCell(0, 1, 'selectLiveGameVendorBBIN')
+data.setCell(0, 2, 'xRunnersGames.SelectLiveGameVendorBBIN')
+data.setCell(0, 3, 57237);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'goToSite')
+data.setCell(1, 1, 'login')
 data.setCell(1, 2, 'xRunnersAuthentication.LoginAndLogout')
-data.setCell(1, 3, 3016);
+data.setCell(1, 3, 4783);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'selectGameCategory')
-data.setCell(2, 2, 'xRunnersGames.SelectGameCategory')
-data.setCell(2, 3, 938);
+data.setCell(2, 1, 'goToSite')
+data.setCell(2, 2, 'xRunnersAuthentication.LoginAndLogout')
+data.setCell(2, 3, 2845);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'selectLiveGameVendorBBIN')
-data.setCell(3, 2, 'xRunnersGames.SelectLiveGameVendorMG')
-data.setCell(3, 3, 680);
+data.setCell(3, 1, 'selectGameCategory')
+data.setCell(3, 2, 'xRunnersGames.SelectGameCategory')
+data.setCell(3, 3, 1916);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -332,7 +332,7 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">xSetups.Setup</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">setup(LiveMG, WEB, chrome, 17 JDK, Jordan)</span>
+                <span class="method-name">setup(LiveBBIN, WEB, chrome, 17 JDK, Jordan)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
@@ -340,32 +340,32 @@ return data;
               <div class="chronological-class-name">xRunnersAuthentication.LoginAndLogout</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">goToSite(https://wltestmembersite.the777888.com)</span>
-                <span class="method-start">1869 ms</span>
+                <span class="method-start">1781 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">login(qctestergame001, test123)</span>
-                <span class="method-start">4896 ms</span>
+                <span class="method-start">4636 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">xRunnersGames.SelectGameCategory</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">selectGameCategory(4)</span>
-                <span class="method-start">10379 ms</span>
+                <span class="method-start">9421 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">xRunnersGames.SelectLiveGameVendorMG</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">xRunnersGames.SelectLiveGameVendorBBIN</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">selectLiveGameVendorBBIN(MG 真人)</span>
-                <span class="method-start">11322 ms</span>
+                <span class="method-name">selectLiveGameVendorBBIN(BBIN)</span>
+                <span class="method-start">11338 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">xSetups.Setup</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">12073 ms</span>
+                <span class="method-start">68626 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

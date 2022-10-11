@@ -21,7 +21,7 @@
 		<groups>
 			<run>
 				<exclude name="logout"></exclude>
-				<!-- <exclude name="mg"></exclude> -->
+				<!-- <exclude name="BBIN Live"></exclude> -->
 			</run>
 		</groups>
 		<classes>

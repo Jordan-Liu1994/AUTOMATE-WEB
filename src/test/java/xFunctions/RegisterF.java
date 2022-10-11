@@ -5,6 +5,7 @@ import javax.security.auth.login.FailedLoginException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
+import org.testng.SkipException;
 
 import xCommonUtilities.GenerateRandomNumbers;
 import xCommonUtilities.GenerateReports;
@@ -78,6 +79,7 @@ public class RegisterF {
 		} catch (NoSuchElementException e) {
 			e.printStackTrace();
 			generateReports.setExtentTestSkip("captcha skip");
+			throw new SkipException("captcha skip");
 		}
 	}
 

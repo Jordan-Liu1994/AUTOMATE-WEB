@@ -1,9 +1,11 @@
 package xCommonUtilities;
 
+import xFunctions.LiveBBINBettingF;
 import xFunctions.LoginF;
 import xFunctions.LogoutF;
 import xFunctions.RegisterF;
 import xFunctions.SelectGameCategoryAndVendorF;
+import xFunctions.SelectLiveBBINGameF;
 import xFunctions.SelectSlotsGameAndBetF;
 import xFunctions.StartDrivers;
 
@@ -20,7 +22,9 @@ public class UsedVariables {
 	protected RegisterF registerF = new RegisterF();
 	protected SelectGameCategoryAndVendorF selectGameCategoryAndVendorF = new SelectGameCategoryAndVendorF();
 	protected SelectSlotsGameAndBetF selectSlotsGameAndBetF = new SelectSlotsGameAndBetF();
+	protected SelectLiveBBINGameF selectLiveBBINGameF = new SelectLiveBBINGameF();
 	protected IterateWindow iterateWindow = new IterateWindow();
+	protected LiveBBINBettingF liveBBINBettingF = new LiveBBINBettingF();
 	
 	protected static String parentWindow;
 }
