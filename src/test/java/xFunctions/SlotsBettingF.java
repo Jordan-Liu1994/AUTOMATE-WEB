@@ -21,9 +21,9 @@ public class SlotsBettingF {
 		String imageFilePath = userDir + "\\src\\test\\resources\\images\\slots.sikuli\\";
 		Pattern reduceBetAmountButton = new Pattern(imageFilePath + "reduceBetAmountButton.png").similar(0.8);
 		Pattern betButton = new Pattern(imageFilePath + "betButton.png").similar(0.5);
-		Pattern betRecordButton = new Pattern(imageFilePath + "betRecordButton.png").similar(0.5);
-		Pattern betRecordDetailButton = new Pattern(imageFilePath + "betRecordDetailButton.png").similar(0.5);
-		Pattern betRecordDetailButton2 = new Pattern(imageFilePath + "betRecordButton2.png").similar(0.5);
+		Pattern betRecordButton = new Pattern(imageFilePath + "betRecordButton.png").similar(0.7);
+		Pattern betRecordDetailButton = new Pattern(imageFilePath + "betRecordDetailButton.png").similar(0.7);
+		Pattern betRecordDetailButton2 = new Pattern(imageFilePath + "betRecordButton2.png").similar(0.7);
 		Pattern winBetButton = new Pattern(imageFilePath + "winBetButton.png").similar(0.5);
 
 		s = new Screen(0);
@@ -58,16 +58,13 @@ public class SlotsBettingF {
 
 		waitTime();
 
-		for (int b = 0; b <= 10; b++) {
-			if (s.exists(winBetButton) != null) {
-				s.wait(winBetButton, 30);
-				s.find(winBetButton).mouseMove();
-				waitTime();
-				s.click();
-				break;
-			} else {
-				generateReports.setExtentTestSkip("Bet win image skipped");
-			}
+		if (s.exists(winBetButton) != null) {
+			s.wait(winBetButton, 30);
+			s.find(winBetButton).mouseMove();
+			waitTime();
+			s.click();
+		} else {
+			generateReports.setExtentTestSkip("Bet win image skipped");
 		}
 
 		waitTime();
