@@ -21,10 +21,10 @@ public class SlotsBettingF {
 		String imageFilePath = userDir + "\\src\\test\\resources\\images\\slots.sikuli\\";
 		Pattern reduceBetAmountButton = new Pattern(imageFilePath + "reduceBetAmountButton.png").similar(0.8);
 		Pattern betButton = new Pattern(imageFilePath + "betButton.png").similar(0.5);
-		Pattern betRecordButton = new Pattern(imageFilePath + "betRecordButton.png").similar(0.7);
-		Pattern betRecordDetailButton = new Pattern(imageFilePath + "betRecordDetailButton.png").similar(0.7);
+		Pattern betRecordButton = new Pattern(imageFilePath + "betRecordButton.png").similar(0.5);
+		Pattern betRecordDetailButton = new Pattern(imageFilePath + "betRecordDetailButton-1.png").similar(0.7);
 		Pattern betRecordDetailButton2 = new Pattern(imageFilePath + "betRecordButton2.png").similar(0.7);
-		Pattern winBetButton = new Pattern(imageFilePath + "winBetButton.png").similar(0.5);
+		Pattern winBetButton = new Pattern(imageFilePath + "winBetButton.png");
 
 		s = new Screen(0);
 
