@@ -64,36 +64,40 @@ public class SlotsBettingF {
 			waitTime();
 			s.click();
 		} else {
-			generateReports.setExtentTestSkip("Bet win image skipped");
+			generateReports.setExtentTestSkip("Skipped");
 		}
 
 		waitTime();
 
-		for (int c = 0; c <= 10; c++) {
+		int x1 = 0;
+		while (x1 <= 3) {
 			if (s.exists(betRecordButton) != null) {
 				s.wait(betRecordButton, 30);
 				s.find(betRecordButton).mouseMove();
 				s.click();
 				break;
+			} else {
+				x1++;
 			}
 		}
 
 		waitTime();
 
-		if (s.exists(betRecordDetailButton) != null) {
-			s.wait(betRecordDetailButton, 30);
-			s.find(betRecordDetailButton).mouseMove();
-			s.click();
-		} else {
-			generateReports.setExtentTestSkip("Bet detail image skipped");
-		}
-
-		if (s.exists(betRecordDetailButton2) != null) {
-			s.wait(betRecordDetailButton2, 30);
-			s.find(betRecordDetailButton2).mouseMove();
-			s.click();
-		} else {
-			generateReports.setExtentTestSkip("Bet detail image skipped");
+		int x2 = 0;
+		while (x2 <= 3) {
+			if (s.exists(betRecordDetailButton) != null) {
+				s.wait(betRecordDetailButton, 30);
+				s.find(betRecordDetailButton).mouseMove();
+				s.click();
+				break;
+			} else if (s.exists(betRecordDetailButton2) != null) {
+				s.wait(betRecordDetailButton2, 30);
+				s.find(betRecordDetailButton2).mouseMove();
+				s.click();
+				break;
+			} else {
+				x2++;
+			}
 		}
 	}
 
