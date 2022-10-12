@@ -43,13 +43,16 @@ public class SlotsBettingF {
 
 		waitTime();
 
-		for (int b = 0; b <= 10; b++) {
+		int x = 0;
+		while (x <= 3) {
 			if (s.exists(betButton) != null) {
 				s.wait(betButton, 30);
 				s.find(betButton).mouseMove();
 				s.click();
 				s.mouseMove(-250, 0);
 				break;
+			} else {
+				x++;
 			}
 		}
 
