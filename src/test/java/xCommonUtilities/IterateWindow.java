@@ -14,7 +14,7 @@ public class IterateWindow {
 
 	public void iterateToSecondWindow() {
 		try {
-			Thread.sleep(1500);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -27,7 +27,7 @@ public class IterateWindow {
 
 	public void iterateToThirdWindow() {
 		try {
-			Thread.sleep(1500);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -40,7 +40,7 @@ public class IterateWindow {
 
 	public void iterateToFourthWindow() {
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

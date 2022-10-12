@@ -1,60 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-11T17:58:46 SGT" name="Default suite" finished-at="2022-10-11T17:58:46 SGT" duration-ms="64">
+  <suite started-at="2022-10-12T11:21:17 SGT" name="Suite" finished-at="2022-10-12T11:24:54 SGT" duration-ms="217173">
     <groups>
       <group name="CQ9 Slots">
-        <method signature="SelectSlotsGameVendorCQ9.selectSlotsGameVendor(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:xRunnersGames.SelectSlotsGameVendorCQ9@70925b45]" name="selectSlotsGameVendor" class="xRunnersGames.SelectSlotsGameVendorCQ9"/>
+        <method signature="SelectSlotsGameVendorCQ9.selectSlotsGameVendor(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:xRunnersGames.SelectSlotsGameVendorCQ9@3023df74]" name="selectSlotsGameVendor" class="xRunnersGames.SelectSlotsGameVendorCQ9"/>
       </group> <!-- CQ9 Slots -->
+      <group name="login">
+        <method signature="LoginAndLogout.login(java.lang.String,java.lang.String)[pri:1, instance:xRunnersAuthentication.LoginAndLogout@4c371370]" name="login" class="xRunnersAuthentication.LoginAndLogout"/>
+      </group> <!-- login -->
     </groups>
-    <test started-at="2022-10-11T17:58:46 SGT" name="Default test" finished-at="2022-10-11T17:58:46 SGT" duration-ms="64">
+    <test started-at="2022-10-12T11:21:17 SGT" name="Test" finished-at="2022-10-12T11:24:54 SGT" duration-ms="217173">
+      <class name="xRunnersGames.SelectGameCategory">
+        <test-method signature="selectGameCategory(java.lang.String)[pri:0, instance:xRunnersGames.SelectGameCategory@145f66e3]" started-at="2022-10-12T11:21:25 SGT" name="selectGameCategory" finished-at="2022-10-12T11:21:28 SGT" duration-ms="2366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectGameCategory -->
+      </class> <!-- xRunnersGames.SelectGameCategory -->
+      <class name="xSetups.Setup">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:xSetups.Setup@4f83df68]" started-at="2022-10-12T11:21:15 SGT" name="setup" finished-at="2022-10-12T11:21:17 SGT" duration-ms="1808" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SlotsCQ9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[WEB]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[17 JDK]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Jordan]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:xSetups.Setup@4f83df68]" started-at="2022-10-12T11:24:54 SGT" name="tearDown" finished-at="2022-10-12T11:24:56 SGT" duration-ms="1799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- xSetups.Setup -->
       <class name="xRunnersGames.SelectSlotsGameVendorCQ9">
-        <test-method signature="selectSlotsGameVendor(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:xRunnersGames.SelectSlotsGameVendorCQ9@70925b45]" started-at="2022-10-11T17:58:46 SGT" name="selectSlotsGameVendor" finished-at="2022-10-11T17:58:46 SGT" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'gameVendor' is required by @Test on method selectSlotsGameVendor but has not been marked @Optional or defined
-in C:\Users\Jordan Liu\AppData\Local\Temp\testng-eclipse-1252496159\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'gameVendor' is required by @Test on method selectSlotsGameVendor but has not been marked @Optional or defined
-in C:\Users\Jordan Liu\AppData\Local\Temp\testng-eclipse-1252496159\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="selectSlotsGameVendor(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:xRunnersGames.SelectSlotsGameVendorCQ9@3023df74]" started-at="2022-10-12T11:21:28 SGT" name="selectSlotsGameVendor" finished-at="2022-10-12T11:24:54 SGT" duration-ms="205954" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[鸿福齐天]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[甜蜜蜜]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[金大款]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSlotsGameVendor -->
       </class> <!-- xRunnersGames.SelectSlotsGameVendorCQ9 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="xRunnersAuthentication.LoginAndLogout">
+        <test-method signature="goToSite(java.lang.String)[pri:0, instance:xRunnersAuthentication.LoginAndLogout@4c371370]" started-at="2022-10-12T11:21:17 SGT" name="goToSite" finished-at="2022-10-12T11:21:20 SGT" duration-ms="3642" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://wltestmembersite.the777888.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToSite -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:xRunnersAuthentication.LoginAndLogout@4c371370]" started-at="2022-10-12T11:21:20 SGT" name="login" finished-at="2022-10-12T11:21:25 SGT" duration-ms="5145" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qctestergame001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- xRunnersAuthentication.LoginAndLogout -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

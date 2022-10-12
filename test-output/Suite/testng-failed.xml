@@ -4,7 +4,7 @@
   <parameter name="reportName" value="SlotsCQ9"/>
   <parameter name="javaVersion" value="17 JDK"/>
   <parameter name="game1" value="鸿福齐天"/>
-  <parameter name="gameVendor" value="6"/>
+  <parameter name="gameVendor" value="5"/>
   <parameter name="platform" value="WEB"/>
   <parameter name="url" value="https://wltestmembersite.the777888.com"/>
   <parameter name="number" value="3"/>

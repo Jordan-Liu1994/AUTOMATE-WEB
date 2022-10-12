@@ -3,3 +3,4 @@
 "betRecordDetailButton.png"
 "winBetButton.png"
 "betButton.png"
+"betRecordButton2.png"
