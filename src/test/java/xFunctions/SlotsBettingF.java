@@ -29,78 +29,84 @@ public class SlotsBettingF {
 
 		s = new Screen(0);
 
-		for (int a = 0; a <= 10; a++) {
-			if (s.exists(reduceBetAmountButton) != null) {
-				s.wait(reduceBetAmountButton, 15);
-				s.find(reduceBetAmountButton).mouseMove();
-				int x = 1;
-				while (x <= 5) {
-					s.click();
-					x++;
-				}
-				break;
-			} else {
-				generateReports.setExtentTestFail("Failed");
-				throw new FailedLoginException();
+		waitTimeLong();
+
+		s.wait(reduceBetAmountButton, 15).find(reduceBetAmountButton);
+		if (s.exists(reduceBetAmountButton) != null) {
+			s.mouseMove();
+			int x = 1;
+			while (x <= 5) {
+				s.click();
+				x++;
 			}
+		} else {
+			generateReports.setExtentTestFail("Failed");
+			throw new FailedLoginException();
 		}
 
-		waitTime();
-
-//		int x = 0;
-//		while (x <= 3) {
-//			if (s.exists(betButton) != null) {
-//				s.wait(betButton, 15);
-//				s.find(betButton).mouseMove();
-//				s.click();
-//				s.mouseMove(-250, 0);
-//				break;
-//			} else {
-//				x++;
-//			}
+//		waitTime();
+//
+//		s.wait(betButton, 15).find(betButton);
+//		if (s.exists(betButton) != null) {
+//			s.mouseMove();
+//			s.click();
+//			s.mouseMove(-250, 0);
+//		} else {
+//			generateReports.setExtentTestFail("Failed");
+//			throw new FailedLoginException();
 //		}
-
-		waitTime();
-
-		if (s.exists(winBetButton) != null) {
-			s.wait(winBetButton, 15);
-			s.find(winBetButton).mouseMove();
-			waitTime();
-			s.click();
-		} else {
-			generateReports.setExtentTestSkip("Skipped");
-		}
-
-		waitTime();
-
-		if (s.exists(betRecordButton) != null) {
-			s.wait(betRecordButton, 15);
-			s.find(betRecordButton).mouseMove();
-			s.click();
-		} else {
-			generateReports.setExtentTestFail("Failed");
-			throw new FailedLoginException();
-		}
-
-		waitTime();
-
-		if (s.exists(betRecordDetailButton) != null) {
-			s.wait(betRecordDetailButton, 15);
-			s.find(betRecordDetailButton).mouseMove();
-			s.click();
-		} else if (s.exists(betRecordDetailButton2) != null) {
-			s.wait(betRecordDetailButton2, 15);
-			s.find(betRecordDetailButton2).mouseMove();
-			s.click();
-		} else {
-			generateReports.setExtentTestFail("Failed");
-			throw new FailedLoginException();
-		}
+//
+//		waitTimeLong();
+//
+//		s.wait(winBetButton, 15).find(winBetButton);
+//		if (s.exists(winBetButton) != null) {
+//			s.mouseMove();
+//			s.click();
+//		} else {
+//			generateReports.setExtentTestSkip("Skipped");
+//		}
+//
+//		waitTime();
+//
+//		s.wait(betRecordButton, 15).find(betRecordButton);
+//		if (s.exists(betRecordButton) != null) {
+//			s.mouseMove();
+//			s.click();
+//		} else {
+//			generateReports.setExtentTestFail("Failed");
+//			throw new FailedLoginException();
+//		}
+//
+//		waitTime();
+//
+//		s.wait(betRecordDetailButton, 15).find(betRecordDetailButton);
+//		if (s.exists(betRecordDetailButton) != null) {
+//			s.mouseMove();
+//			s.click();
+//		} else {
+//			generateReports.setExtentTestSkip("Skipped");
+//		}
+//		
+//		s.wait(betRecordDetailButton2, 15).find(betRecordDetailButton2);
+//		if (s.exists(betRecordDetailButton2) != null) {
+//			s.mouseMove();
+//			s.click();
+//		} else {
+//			generateReports.setExtentTestSkip("Skipped");
+//		}
 	}
 
 	public void waitTime() {
 		try {
-			Thread.sleep(1000);
+			Thread.sleep(1500);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void waitTimeLong() {
+		try {
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
