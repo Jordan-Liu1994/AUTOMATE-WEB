@@ -26,16 +26,6 @@
           <include name="selectSlotsGameVendor" invocation-numbers="0"/>
         </methods>
       </class> <!-- xRunnersGames.SelectSlotsGameVendorCQ9 -->
-      <class name="xRunnersAuthentication.LoginAndLogout">
-        <methods>
-          <include name="login" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- xRunnersAuthentication.LoginAndLogout -->
-      <class name="xRunnersGames.SelectGameCategory">
-        <methods>
-          <include name="selectGameCategory" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- xRunnersGames.SelectGameCategory -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

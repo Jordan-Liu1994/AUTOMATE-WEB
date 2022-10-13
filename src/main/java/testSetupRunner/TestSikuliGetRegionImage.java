@@ -8,7 +8,7 @@ import javax.imageio.ImageIO;
 import org.sikuli.script.Region;
 import org.sikuli.script.Screen;
 
-public class TestSikuliGetRegion {
+public class TestSikuliGetRegionImage {
 
 	static Region r;
 
@@ -21,6 +21,12 @@ public class TestSikuliGetRegion {
 		r = s.selectRegion();
 		r.highlightOn();
 		System.out.println(r);
+
+		try {
+			ImageIO.write(s.capture(r).getImage(), "png", new File(imageFilePath + "winBetButton.png"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		r.highlightOff();
 	}
 }
