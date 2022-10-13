@@ -23,7 +23,7 @@ public class TestSikuliGetRegionImage {
 		System.out.println(r);
 
 		try {
-			ImageIO.write(s.capture(r).getImage(), "png", new File(imageFilePath + "betRecordButton2.png"));
+			ImageIO.write(s.capture(r).getImage(), "png", new File(imageFilePath + "betRecordButton.png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

@@ -22,6 +22,8 @@ public class SlotsBettingF {
 	Pattern reduceBetAmount = new Pattern(imageFilePath + "reduceBetAmount.png");
 	Pattern betButton = new Pattern(imageFilePath + "betButton.png");
 	Pattern settingsButton = new Pattern(imageFilePath + "settingsButton.png");
+	Pattern settingsButton2 = new Pattern(imageFilePath + "settingsButton2.png");
+	Pattern settingsButton3 = new Pattern(imageFilePath + "settingsButton3.png");
 	Pattern betRecordButton = new Pattern(imageFilePath + "betRecordButton.png");
 	Pattern betRecordButton2 = new Pattern(imageFilePath + "betRecordButton2.png");
 	Pattern winBetButton = new Pattern(imageFilePath + "winBetButton.png");
@@ -61,25 +63,26 @@ public class SlotsBettingF {
 
 		waitTimeLong();
 
-//		if (s.exists(winBetButton, 10) != null) {
-//			s.mouseMove();
-//			waitTime();
-//			x = Mouse.at();
-//			r = x.grow(150,150);
-//			r.highlightOn();
-//			for (int b = 1; b <= 3; b++) {
-//				r.click();
-//			}
-//			r.highlightOff();
-//			r.click();
-//		} else {
-//			String noWin = "Never win";
-//			generateReports.setExtentTestSkip(noWin);
-//		}
+		if (s.exists(winBetButton) != null) {
+			s.mouseMove();
+			waitTime();
+			Location x = Mouse.at().click();
+		} else {
+			String noWin = "Never win";
+			generateReports.setExtentTestSkip(noWin);
+		}
 
 		waitTime();
 
 		if (s.exists(settingsButton) != null) {
+			s.mouseMove();
+			waitTime();
+			Location x = Mouse.at().click();
+		} else if (s.exists(settingsButton2) != null) {
+			s.mouseMove();
+			waitTime();
+			Location x = Mouse.at().click();
+		} else if (s.exists(settingsButton3) != null) {
 			s.mouseMove();
 			waitTime();
 			Location x = Mouse.at().click();
@@ -90,7 +93,9 @@ public class SlotsBettingF {
 
 		waitTime();
 
-		if (s.exists(betRecordButton, 15) != null) {
+		if (s.exists(betRecordButton) != null)
+
+		{
 			s.mouseMove();
 			waitTime();
 			Location x = Mouse.at().click();
@@ -98,7 +103,7 @@ public class SlotsBettingF {
 			generateReports.setExtentTestSkip("betRecordButton image not found");
 		}
 
-		if (s.exists(betRecordButton2, 15) != null) {
+		if (s.exists(betRecordButton2) != null) {
 			s.mouseMove();
 			waitTime();
 			Location x = Mouse.at().click();
