@@ -6,6 +6,7 @@ import org.sikuli.script.FindFailed;
 import org.sikuli.script.Location;
 import org.sikuli.script.Mouse;
 import org.sikuli.script.Pattern;
+import org.sikuli.script.Region;
 import org.sikuli.script.Screen;
 
 import xCommonUtilities.ActionBuilder;
@@ -22,12 +23,12 @@ public class SlotsBettingF {
 	Pattern reduceBetAmount = new Pattern(imageFilePath + "reduceBetAmount.png");
 	Pattern betButton = new Pattern(imageFilePath + "betButton.png");
 	Pattern settingsButton = new Pattern(imageFilePath + "settingsButton.png");
-	Pattern settingsButton2 = new Pattern(imageFilePath + "settingsButton2.png");
-	Pattern settingsButton3 = new Pattern(imageFilePath + "settingsButton3.png");
 	Pattern betRecordButton = new Pattern(imageFilePath + "betRecordButton.png");
 	Pattern betRecordButton2 = new Pattern(imageFilePath + "betRecordButton2.png");
 	Pattern winBetButton = new Pattern(imageFilePath + "winBetButton.png");
 
+	Region r;
+	
 	public void doSlotsBet() throws FailedLoginException, FindFailed {
 
 		Screen s = new Screen(0);
@@ -38,8 +39,10 @@ public class SlotsBettingF {
 			s.mouseMove();
 			waitTime();
 			Location x = Mouse.at();
+			r = x.grow(100,100);
+			r.highlight("green");
 			for (int b = 1; b <= 5; b++) {
-				x.click();
+				r.click();
 			}
 		} else {
 			generateReports.setExtentTestFail("reduceBetAmount image not found");
@@ -47,13 +50,16 @@ public class SlotsBettingF {
 		}
 
 		waitTime();
-
+		r.highlightOff();
+		
 		if (s.exists(betButton) != null) {
 			s.mouseMove();
 			waitTime();
 			Location x = Mouse.at();
+			r = x.grow(100,100);
+			r.highlight("green");
 			for (int b = 1; b <= 2; b++) {
-				x.click();
+				r.click();
 			}
 			s.mouseMove(-250, 0);
 		} else {
@@ -62,43 +68,45 @@ public class SlotsBettingF {
 		}
 
 		waitTimeLong();
-
+		r.highlightOff();
+		
 		if (s.exists(winBetButton) != null) {
 			s.mouseMove();
 			waitTime();
-			Location x = Mouse.at().click();
+			Location x = Mouse.at();
+			r = x.grow(100,100);
+			r.highlight("green");
+			r.click();
 		} else {
 			String noWin = "Never win";
 			generateReports.setExtentTestSkip(noWin);
 		}
 
 		waitTime();
+		r.highlightOff();
 
 		if (s.exists(settingsButton) != null) {
 			s.mouseMove();
 			waitTime();
-			Location x = Mouse.at().click();
-		} else if (s.exists(settingsButton2) != null) {
-			s.mouseMove();
-			waitTime();
-			Location x = Mouse.at().click();
-		} else if (s.exists(settingsButton3) != null) {
-			s.mouseMove();
-			waitTime();
-			Location x = Mouse.at().click();
+			Location x = Mouse.at();
+			r = x.grow(100,100);
+			r.highlight("green");
+			r.click();
 		} else {
 			generateReports.setExtentTestFail("settingsButton image not found");
 			throw new FailedLoginException();
 		}
 
 		waitTime();
+		r.highlightOff();
 
-		if (s.exists(betRecordButton) != null)
-
-		{
+		if (s.exists(betRecordButton) != null) {
 			s.mouseMove();
 			waitTime();
-			Location x = Mouse.at().click();
+			Location x = Mouse.at();
+			r = x.grow(100,100);
+			r.highlight("green");
+			r.click();
 		} else {
 			generateReports.setExtentTestSkip("betRecordButton image not found");
 		}
@@ -106,15 +114,20 @@ public class SlotsBettingF {
 		if (s.exists(betRecordButton2) != null) {
 			s.mouseMove();
 			waitTime();
-			Location x = Mouse.at().click();
+			Location x = Mouse.at();
+			r = x.grow(100,100);
+			r.highlight("green");
+			r.click();
 		} else {
 			generateReports.setExtentTestSkip("betRecordButton2 image not found");
 		}
+		
+		r.highlightOff();
 	}
 
 	public void waitTimeLong() {
 		try {
-			Thread.sleep(7500);
+			Thread.sleep(5000);
 			System.out.println("Wait time over");
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -123,7 +136,7 @@ public class SlotsBettingF {
 
 	public void waitTime() {
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(1500);
 			System.out.println("Wait time over");
 		} catch (InterruptedException e) {
 			e.printStackTrace();
