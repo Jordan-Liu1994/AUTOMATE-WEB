@@ -59,7 +59,9 @@ public class SlotsBettingF {
 			x = Mouse.at();
 			r = x.grow(150,150);
 			r.highlightOn();
-			r.click();
+			for (int b = 1; b <= 3; b++) {
+				r.click();
+			}
 			s.mouseMove(-250, 0);
 			r.highlightOff();
 		} else {
@@ -75,7 +77,9 @@ public class SlotsBettingF {
 			x = Mouse.at();
 			r = x.grow(150,150);
 			r.highlightOn();
-			r.click();
+			for (int b = 1; b <= 3; b++) {
+				r.click();
+			}
 			r.highlightOff();
 			r.click();
 		} else {
@@ -92,7 +96,9 @@ public class SlotsBettingF {
 			x = Mouse.at();
 			r = x.grow(150,150);
 			r.highlightOn();
-			r.click();
+			for (int b = 1; b <= 3; b++) {
+				r.click();
+			}
 			r.highlightOff();
 		} else {
 			generateReports.setExtentTestFail("Image not found");
@@ -108,7 +114,9 @@ public class SlotsBettingF {
 			x = Mouse.at();
 			r = x.grow(150,150);
 			r.highlightOn();
-			r.click();
+			for (int b = 1; b <= 3; b++) {
+				r.click();
+			}
 			r.highlightOff();
 		} else if (s.exists(betRecordButton2, 15) != null) {
 			s.find(betRecordButton2);
@@ -117,7 +125,9 @@ public class SlotsBettingF {
 			x = Mouse.at();
 			r = x.grow(150,150);
 			r.highlightOn();
-			r.click();
+			for (int b = 1; b <= 3; b++) {
+				r.click();
+			}
 			r.highlightOff();
 		} else {
 			generateReports.setExtentTestFail("Image not found");
@@ -126,7 +136,7 @@ public class SlotsBettingF {
 
 	public void waitTimeLong() {
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(7500);
 			System.out.println("Wait time over");
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -135,7 +145,7 @@ public class SlotsBettingF {
 
 	public void waitTime() {
 		try {
-			Thread.sleep(1500);
+			Thread.sleep(3000);
 			System.out.println("Wait time over");
 		} catch (InterruptedException e) {
 			e.printStackTrace();
