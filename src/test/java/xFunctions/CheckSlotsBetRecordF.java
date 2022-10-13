@@ -1,7 +1,5 @@
 package xFunctions;
 
-import javax.security.auth.login.FailedLoginException;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 

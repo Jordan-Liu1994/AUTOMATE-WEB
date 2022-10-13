@@ -6,131 +6,104 @@ import org.sikuli.script.FindFailed;
 import org.sikuli.script.Location;
 import org.sikuli.script.Mouse;
 import org.sikuli.script.Pattern;
-import org.sikuli.script.Region;
 import org.sikuli.script.Screen;
 
+import xCommonUtilities.ActionBuilder;
 import xCommonUtilities.GenerateReports;
 
 public class SlotsBettingF {
 
+	ActionBuilder actionBuilder = new ActionBuilder();
 	GenerateReports generateReports = new GenerateReports();
 
 	String userDir = System.getProperty("user.dir");
 	String imageFilePath = userDir + "\\src\\test\\resources\\images\\Slots\\";
 
-	Pattern reduceBetAmount = new Pattern(imageFilePath + "reduceBetAmount.png").similar(0.6);
+	Pattern reduceBetAmount = new Pattern(imageFilePath + "reduceBetAmount.png");
 	Pattern betButton = new Pattern(imageFilePath + "betButton.png");
-	Pattern settingsButton = new Pattern(imageFilePath + "settingsButton.png").similar(0.6);
+	Pattern settingsButton = new Pattern(imageFilePath + "settingsButton.png");
 	Pattern betRecordButton = new Pattern(imageFilePath + "betRecordButton.png");
 	Pattern betRecordButton2 = new Pattern(imageFilePath + "betRecordButton2.png");
 	Pattern winBetButton = new Pattern(imageFilePath + "winBetButton.png");
-	
-	Location x;
-	Region r;
-	
+
 	public void doSlotsBet() throws FailedLoginException, FindFailed {
 
 		Screen s = new Screen(0);
-		
+
 		waitTimeLong();
 
 		if (s.exists(reduceBetAmount) != null) {
-			s.find(reduceBetAmount);
 			s.mouseMove();
 			waitTime();
-			x = Mouse.at();
-			r = x.grow(150,150);
-			r.highlightOn();
+			Location x = Mouse.at();
 			for (int b = 1; b <= 5; b++) {
-				r.click();
+				x.click();
 			}
-			r.highlightOff();
 		} else {
-			generateReports.setExtentTestFail("Image not found");
+			generateReports.setExtentTestFail("reduceBetAmount image not found");
 			throw new FailedLoginException();
 		}
 
 		waitTime();
-		
+
 		if (s.exists(betButton) != null) {
-			s.find(betButton);
 			s.mouseMove();
 			waitTime();
-			x = Mouse.at();
-			r = x.grow(150,150);
-			r.highlightOn();
-			for (int b = 1; b <= 3; b++) {
-				r.click();
+			Location x = Mouse.at();
+			for (int b = 1; b <= 2; b++) {
+				x.click();
 			}
 			s.mouseMove(-250, 0);
-			r.highlightOff();
 		} else {
-			generateReports.setExtentTestFail("Image not found");
+			generateReports.setExtentTestFail("betButton image not found");
 			throw new FailedLoginException();
 		}
 
 		waitTimeLong();
 
-		if (s.exists(winBetButton, 10) != null) {
-			s.mouseMove();
-			waitTime();
-			x = Mouse.at();
-			r = x.grow(150,150);
-			r.highlightOn();
-			for (int b = 1; b <= 3; b++) {
-				r.click();
-			}
-			r.highlightOff();
-			r.click();
-		} else {
-			String noWin = "Never win";
-			generateReports.setExtentTestSkip(noWin);
-		}
+//		if (s.exists(winBetButton, 10) != null) {
+//			s.mouseMove();
+//			waitTime();
+//			x = Mouse.at();
+//			r = x.grow(150,150);
+//			r.highlightOn();
+//			for (int b = 1; b <= 3; b++) {
+//				r.click();
+//			}
+//			r.highlightOff();
+//			r.click();
+//		} else {
+//			String noWin = "Never win";
+//			generateReports.setExtentTestSkip(noWin);
+//		}
 
 		waitTime();
-		
+
 		if (s.exists(settingsButton) != null) {
-			s.find(settingsButton);
 			s.mouseMove();
 			waitTime();
-			x = Mouse.at();
-			r = x.grow(150,150);
-			r.highlightOn();
-			for (int b = 1; b <= 3; b++) {
-				r.click();
-			}
-			r.highlightOff();
+			Location x = Mouse.at().click();
 		} else {
-			generateReports.setExtentTestFail("Image not found");
+			generateReports.setExtentTestFail("settingsButton image not found");
 			throw new FailedLoginException();
 		}
 
 		waitTime();
-		
+
 		if (s.exists(betRecordButton, 15) != null) {
-			s.find(betRecordButton);
 			s.mouseMove();
 			waitTime();
-			x = Mouse.at();
-			r = x.grow(150,150);
-			r.highlightOn();
-			for (int b = 1; b <= 3; b++) {
-				r.click();
-			}
-			r.highlightOff();
-		} else if (s.exists(betRecordButton2, 15) != null) {
-			s.find(betRecordButton2);
-			s.mouseMove();
-			waitTime();
-			x = Mouse.at();
-			r = x.grow(150,150);
-			r.highlightOn();
-			for (int b = 1; b <= 3; b++) {
-				r.click();
-			}
-			r.highlightOff();
+			Location x = Mouse.at().click();
 		} else {
-			generateReports.setExtentTestFail("Image not found");
+			generateReports.setExtentTestSkip("betRecordButton image not found");
+		}
+
+		if (s.exists(betRecordButton2, 15) != null) {
+			s.mouseMove();
+			waitTime();
+			Location x = Mouse.at().click();
+		} else {
+			generateReports.setExtentTestSkip("betRecordButton2 image not found");
 		}
 	}
 
