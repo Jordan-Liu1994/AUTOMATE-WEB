@@ -37,6 +37,7 @@ public class SlotsBettingF {
 		if (s.exists(reduceBetAmount) != null) {
 			s.find(reduceBetAmount);
 			s.mouseMove();
+			waitTime();
 			x = Mouse.at();
 			r = x.grow(150,150);
 			r.highlightOn();
@@ -54,6 +55,7 @@ public class SlotsBettingF {
 		if (s.exists(betButton) != null) {
 			s.find(betButton);
 			s.mouseMove();
+			waitTime();
 			x = Mouse.at();
 			r = x.grow(150,150);
 			r.highlightOn();
@@ -69,6 +71,7 @@ public class SlotsBettingF {
 
 		if (s.exists(winBetButton, 10) != null) {
 			s.mouseMove();
+			waitTime();
 			x = Mouse.at();
 			r = x.grow(150,150);
 			r.highlightOn();
@@ -85,6 +88,7 @@ public class SlotsBettingF {
 		if (s.exists(settingsButton) != null) {
 			s.find(settingsButton);
 			s.mouseMove();
+			waitTime();
 			x = Mouse.at();
 			r = x.grow(150,150);
 			r.highlightOn();
@@ -100,6 +104,7 @@ public class SlotsBettingF {
 		if (s.exists(betRecordButton, 15) != null) {
 			s.find(betRecordButton);
 			s.mouseMove();
+			waitTime();
 			x = Mouse.at();
 			r = x.grow(150,150);
 			r.highlightOn();
@@ -108,6 +113,7 @@ public class SlotsBettingF {
 		} else if (s.exists(betRecordButton2, 15) != null) {
 			s.find(betRecordButton2);
 			s.mouseMove();
+			waitTime();
 			x = Mouse.at();
 			r = x.grow(150,150);
 			r.highlightOn();
