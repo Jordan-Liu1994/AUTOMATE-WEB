@@ -29,7 +29,7 @@ public class LiveBBINBettingF {
 	public void setBetAmount() throws FailedLoginException, FindFailed {
 		s = new Screen(0);
 
-		for (int a = 1; a <= 2; a++) {
+		for (int a = 1; a <= 5; a++) {
 			waitTimeLong();
 		}
 
@@ -52,7 +52,7 @@ public class LiveBBINBettingF {
 	public void checkAllowBet() throws FailedLoginException, FindFailed {
 		s = new Screen(0);
 
-		if (s.exists(betAllow, 120) != null) {
+		if (s.exists(betAllow, 360) != null) {
 			s.mouseMove();
 			waitTime("betAllow");
 			Location x = Mouse.at();
@@ -101,9 +101,9 @@ public class LiveBBINBettingF {
 			generateReports.setExtentTestFail("confirmBet image not found");
 			throw new FailedLoginException();
 		}
-		
+
 		int a = 0;
-		while (a <= 10) {
+		while (a <= 5) {
 			waitTimeLong();
 			a++;
 			System.out.println(a);
@@ -121,6 +121,15 @@ public class LiveBBINBettingF {
 			r.highlight("green");
 			r.click();
 			s.mouseMove(-250, 250);
+			for (int z = 1; z <= 5; z++) {
+				if (s.exists(betRecordButton) != null) {
+					s.click(betRecordButton);
+					s.mouseMove(500, -250);
+					System.out.println(z);
+				} else {
+					break;
+				}
+			}
 			r.highlightOff();
 		} else {
 			generateReports.setExtentTestFail("betRecordButton image not found");
@@ -131,7 +140,7 @@ public class LiveBBINBettingF {
 
 	public void waitTimeLong() {
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(3000);
 			System.out.println("Wait time over");
 		} catch (InterruptedException e) {
 			e.printStackTrace();
