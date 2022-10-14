@@ -31,7 +31,7 @@ public class TestSikuli {
 //		r = s.newRegion(880, 259, 67, 80).grow(15, 15);
 //		r = s.newRegion(551, 667, 59, 64).grow(15, 15);
 
-		s.find(test3);
+		s.find(test5);
 		s.mouseMove();
 		Location x = Mouse.at();
 		System.out.println(x);
