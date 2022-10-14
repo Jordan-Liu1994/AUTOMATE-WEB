@@ -22,7 +22,6 @@ public class TestSikuli {
 		Pattern test = new Pattern(imageFilePath + "reduceBetAmount.png");
 		Pattern test2 = new Pattern(imageFilePath + "betButton.png");
 		Pattern test3 = new Pattern(imageFilePath + "settingsButton.png");
-		Pattern test4 = new Pattern(imageFilePath + "betRecordButton.png");
 		Pattern test5 = new Pattern(imageFilePath + "betRecordButton2.png");
 
 //		r = s.newRegion(1322, 571, 100, 75).grow();

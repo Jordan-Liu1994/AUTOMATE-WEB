@@ -2,18 +2,18 @@
 <testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-14T10:26:13 SGT" name="Suite" finished-at="2022-10-14T10:28:58 SGT" duration-ms="164193">
+  <suite started-at="2022-10-14T11:00:20 SGT" name="Suite" finished-at="2022-10-14T11:02:42 SGT" duration-ms="141943">
     <groups>
       <group name="CQ9 Slots">
-        <method signature="SelectSlotsGameVendorCQ9.selectSlotsGameVendor(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:xRunnersGames.SelectSlotsGameVendorCQ9@1cb346ea]" name="selectSlotsGameVendor" class="xRunnersGames.SelectSlotsGameVendorCQ9"/>
+        <method signature="SelectSlotsGameVendorCQ9.selectSlotsGameVendor(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:xRunnersGames.SelectSlotsGameVendorCQ9@6870c3c2]" name="selectSlotsGameVendor" class="xRunnersGames.SelectSlotsGameVendorCQ9"/>
       </group> <!-- CQ9 Slots -->
       <group name="login">
-        <method signature="LoginAndLogout.login(java.lang.String,java.lang.String)[pri:1, instance:xRunnersAuthentication.LoginAndLogout@52815fa3]" name="login" class="xRunnersAuthentication.LoginAndLogout"/>
+        <method signature="LoginAndLogout.login(java.lang.String,java.lang.String)[pri:1, instance:xRunnersAuthentication.LoginAndLogout@483b0690]" name="login" class="xRunnersAuthentication.LoginAndLogout"/>
       </group> <!-- login -->
     </groups>
-    <test started-at="2022-10-14T10:26:13 SGT" name="Test" finished-at="2022-10-14T10:28:58 SGT" duration-ms="164193">
+    <test started-at="2022-10-14T11:00:20 SGT" name="Test" finished-at="2022-10-14T11:02:42 SGT" duration-ms="141943">
       <class name="xRunnersGames.SelectGameCategory">
-        <test-method signature="selectGameCategory(java.lang.String)[pri:0, instance:xRunnersGames.SelectGameCategory@50313382]" started-at="2022-10-14T10:26:22 SGT" name="selectGameCategory" finished-at="2022-10-14T10:26:24 SGT" duration-ms="1951" status="PASS">
+        <test-method signature="selectGameCategory(java.lang.String)[pri:0, instance:xRunnersGames.SelectGameCategory@687e6293]" started-at="2022-10-14T11:00:28 SGT" name="selectGameCategory" finished-at="2022-10-14T11:00:30 SGT" duration-ms="2165" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
         </test-method> <!-- selectGameCategory -->
       </class> <!-- xRunnersGames.SelectGameCategory -->
       <class name="xSetups.Setup">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:xSetups.Setup@3224a577]" started-at="2022-10-14T10:26:12 SGT" name="setup" finished-at="2022-10-14T10:26:13 SGT" duration-ms="1589" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:xSetups.Setup@6215366a]" started-at="2022-10-14T11:00:17 SGT" name="setup" finished-at="2022-10-14T11:00:20 SGT" duration-ms="2362" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -57,13 +57,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:xSetups.Setup@3224a577]" started-at="2022-10-14T10:28:58 SGT" name="tearDown" finished-at="2022-10-14T10:28:59 SGT" duration-ms="1556" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:xSetups.Setup@6215366a]" started-at="2022-10-14T11:02:42 SGT" name="tearDown" finished-at="2022-10-14T11:02:43 SGT" duration-ms="1672" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- xSetups.Setup -->
       <class name="xRunnersGames.SelectSlotsGameVendorCQ9">
-        <test-method signature="selectSlotsGameVendor(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:xRunnersGames.SelectSlotsGameVendorCQ9@1cb346ea]" started-at="2022-10-14T10:26:24 SGT" name="selectSlotsGameVendor" finished-at="2022-10-14T10:28:58 SGT" duration-ms="153804" status="PASS">
+        <test-method signature="selectSlotsGameVendor(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:xRunnersGames.SelectSlotsGameVendorCQ9@6870c3c2]" started-at="2022-10-14T11:00:30 SGT" name="selectSlotsGameVendor" finished-at="2022-10-14T11:02:42 SGT" duration-ms="131990" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -91,7 +91,7 @@
         </test-method> <!-- selectSlotsGameVendor -->
       </class> <!-- xRunnersGames.SelectSlotsGameVendorCQ9 -->
       <class name="xRunnersAuthentication.LoginAndLogout">
-        <test-method signature="goToSite(java.lang.String)[pri:0, instance:xRunnersAuthentication.LoginAndLogout@52815fa3]" started-at="2022-10-14T10:26:14 SGT" name="goToSite" finished-at="2022-10-14T10:26:17 SGT" duration-ms="3122" status="PASS">
+        <test-method signature="goToSite(java.lang.String)[pri:0, instance:xRunnersAuthentication.LoginAndLogout@483b0690]" started-at="2022-10-14T11:00:20 SGT" name="goToSite" finished-at="2022-10-14T11:00:22 SGT" duration-ms="2467" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -102,7 +102,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToSite -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:xRunnersAuthentication.LoginAndLogout@52815fa3]" started-at="2022-10-14T10:26:17 SGT" name="login" finished-at="2022-10-14T10:26:22 SGT" duration-ms="5276" status="PASS">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:xRunnersAuthentication.LoginAndLogout@483b0690]" started-at="2022-10-14T11:00:22 SGT" name="login" finished-at="2022-10-14T11:00:28 SGT" duration-ms="5259" status="PASS">
           <params>
             <param index="0">
               <value>

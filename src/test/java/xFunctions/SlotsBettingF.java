@@ -22,7 +22,7 @@ public class SlotsBettingF {
 
 	Pattern reduceBetAmount = new Pattern(imageFilePath + "reduceBetAmount.png");
 	Pattern betButton = new Pattern(imageFilePath + "betButton.png");
-	Pattern settingsButton = new Pattern(imageFilePath + "settingsButton.png");
+	Pattern settingsButton = new Pattern(imageFilePath + "settingsButton.png").similar(0.5);
 	Pattern betRecordButton2 = new Pattern(imageFilePath + "betRecordButton2.png");
 	Pattern winBetButton = new Pattern(imageFilePath + "winBetButton.png");
 
@@ -120,6 +120,7 @@ public class SlotsBettingF {
 			r.click();
 		} else {
 			generateReports.setExtentTestSkip("betRecordButton2 image not found");
+			throw new FailedLoginException();
 		}
 		r.highlightOff();
 	}
