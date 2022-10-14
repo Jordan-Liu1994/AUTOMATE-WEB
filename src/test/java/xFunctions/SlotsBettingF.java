@@ -115,6 +115,7 @@ public class SlotsBettingF {
 					s.click(settingsButton);
 					s.mouseMove(500, -250);
 					System.out.println(z);
+				} else {
 					break;
 				}
 			}
@@ -143,6 +144,7 @@ public class SlotsBettingF {
 					s.click(betRecordButton2);
 					s.mouseMove(500, -250);
 					System.out.println(z);
+				}else {
 					break;
 				}
 			}
