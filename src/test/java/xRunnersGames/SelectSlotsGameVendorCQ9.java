@@ -28,8 +28,8 @@ public class SelectSlotsGameVendorCQ9 extends UsedVariables {
 			selectSlotsGameAndBetF.selectSlotsGame(game);
 			iterateWindow.iterateToSecondWindow();
 			slotsBettingF.reduceBetAmount();
-			slotsBettingF.selectBetButton();
-			slotsBettingF.selectWinBet();
+//			slotsBettingF.selectBetButton();
+//			slotsBettingF.selectWinBet();
 			slotsBettingF.selectSettingsButton();
 			slotsBettingF.selectBetRecordButton2();
 			iterateWindow.iterateToThirdWindow();
