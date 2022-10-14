@@ -23,7 +23,6 @@ public class SlotsBettingF {
 	Pattern reduceBetAmount = new Pattern(imageFilePath + "reduceBetAmount.png");
 	Pattern betButton = new Pattern(imageFilePath + "betButton.png");
 	Pattern settingsButton = new Pattern(imageFilePath + "settingsButton.png");
-	Pattern betRecordButton = new Pattern(imageFilePath + "betRecordButton.png");
 	Pattern betRecordButton2 = new Pattern(imageFilePath + "betRecordButton2.png");
 	Pattern winBetButton = new Pattern(imageFilePath + "winBetButton.png");
 
