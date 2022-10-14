@@ -85,7 +85,7 @@ public class SlotsBettingF {
 			r.click();
 			s.mouseMove(-250, 0);
 			waitTime("winBetButton");
-			for (int z = 1; z <= 5; z++) {
+			for (int z = 1; z <= 10; z++) {
 				if (s.exists(winBetButton) != null) {
 					s.click(winBetButton);
 					s.mouseMove(-250, 0);
@@ -115,7 +115,7 @@ public class SlotsBettingF {
 			r.click();
 			s.mouseMove(500, -250);
 			waitTime("settingsButton");
-			for (int z = 1; z <= 5; z++) {
+			for (int z = 1; z <= 10; z++) {
 				if (s.exists(settingsButton) != null) {
 					s.click(settingsButton);
 					s.mouseMove(500, -250);
@@ -144,7 +144,7 @@ public class SlotsBettingF {
 			r.click();
 			s.mouseMove(500, -250);
 			waitTime("selectBetRecordButton2");
-			for (int z = 1; z <= 5; z++) {
+			for (int z = 1; z <= 10; z++) {
 				if (s.exists(betRecordButton2) != null) {
 					s.click(betRecordButton2);
 					s.mouseMove(500, -250);
