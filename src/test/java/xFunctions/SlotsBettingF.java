@@ -109,22 +109,6 @@ public class SlotsBettingF {
 		r.highlightOff();
 	}
 
-//	public void selectBetRecordButton() throws FailedLoginException, FindFailed {
-//		s = new Screen(0);
-//
-//		if (s.exists(betRecordButton) != null) {
-//			s.mouseMove();
-//			waitTime("betRecordButton");
-//			Location x = Mouse.at();
-//			r = x.grow(100, 100);
-//			r.highlight("green");
-//			r.click();
-//		} else {
-//			generateReports.setExtentTestSkip("betRecordButton image not found");
-//		}
-//		r.highlightOff();
-//	}
-
 	public void selectBetRecordButton2() throws FailedLoginException, FindFailed {
 		s = new Screen(0);
 
@@ -153,7 +137,7 @@ public class SlotsBettingF {
 	public void waitTime(String x) {
 		try {
 			Thread.sleep(1500);
-			System.out.println("Wait time over" + x);
+			System.out.println("Wait time over " + x);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

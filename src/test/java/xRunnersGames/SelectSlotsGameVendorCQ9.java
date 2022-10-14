@@ -31,7 +31,6 @@ public class SelectSlotsGameVendorCQ9 extends UsedVariables {
 			slotsBettingF.selectBetButton();
 			slotsBettingF.selectWinBet();
 			slotsBettingF.selectSettingsButton();
-//			slotsBettingF.selectBetRecordButton();
 			slotsBettingF.selectBetRecordButton2();
 			iterateWindow.iterateToThirdWindow();
 			checkSlotsBetRecordF.selectChangeTimeZone();
