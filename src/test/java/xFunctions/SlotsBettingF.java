@@ -102,6 +102,7 @@ public class SlotsBettingF {
 			r = x.grow(100, 100);
 			r.highlight("green");
 			r.click();
+			waitTime("settingsButton");
 			if(s.find(settingsButton).exists(settingsButton) != null) {
 				s.click(settingsButton);
 			} else {
@@ -126,6 +127,7 @@ public class SlotsBettingF {
 			r = x.grow(100, 100);
 			r.highlight("green");
 			r.click();
+			waitTime("selectBetRecordButton2");
 			if(s.find(betRecordButton2).exists(betRecordButton2) != null) {
 				s.click(betRecordButton2);
 			} else {
