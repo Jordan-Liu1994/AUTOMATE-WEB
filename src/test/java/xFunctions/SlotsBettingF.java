@@ -84,6 +84,16 @@ public class SlotsBettingF {
 			r.highlight("green");
 			r.click();
 			s.mouseMove(-250, 0);
+			waitTime("winBetButton");
+			for (int z = 1; z <= 3; z++) {
+				if (s.exists(winBetButton) != null) {
+					s.click(winBetButton);
+					s.mouseMove(-250, 0);
+					break;
+				} else {
+					continue;
+				}
+			}
 		} else {
 			String noWin = "Never win";
 			generateReports.setExtentTestSkip(noWin);
@@ -105,11 +115,14 @@ public class SlotsBettingF {
 			r.click();
 			s.mouseMove(500, -250);
 			waitTime("settingsButton");
-			if(s.exists(settingsButton) != null) {
-				s.click(settingsButton);
-				s.mouseMove(500, -250);
-			} else {
-				System.out.println("Successfully clicked 1st time");
+			for (int z = 1; z <= 3; z++) {
+				if (s.exists(settingsButton) != null) {
+					s.click(settingsButton);
+					s.mouseMove(500, -250);
+					break;
+				} else {
+					continue;
+				}
 			}
 		} else {
 			generateReports.setExtentTestFail("settingsButton image not found");
@@ -131,11 +144,14 @@ public class SlotsBettingF {
 			r.click();
 			s.mouseMove(500, -250);
 			waitTime("selectBetRecordButton2");
-			if(s.exists(betRecordButton2) != null) {
-				s.click(betRecordButton2);
-				s.mouseMove(500, -250);
-			} else {
-				System.out.println("Successfully clicked 1st time");
+			for (int z = 1; z <= 3; z++) {
+				if (s.exists(betRecordButton2) != null) {
+					s.click(betRecordButton2);
+					s.mouseMove(500, -250);
+					break;
+				} else {
+					continue;
+				}
 			}
 		} else {
 			generateReports.setExtentTestSkip("betRecordButton2 image not found");
