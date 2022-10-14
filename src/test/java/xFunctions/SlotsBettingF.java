@@ -47,6 +47,7 @@ public class SlotsBettingF {
 			generateReports.setExtentTestFail("reduceBetAmount image not found");
 			throw new FailedLoginException();
 		}
+		s.mouseMove(-250, 0);
 		waitTime("reduceBetAmount");
 		r.highlightOff();
 	}
@@ -63,11 +64,11 @@ public class SlotsBettingF {
 			for (int b = 1; b <= 2; b++) {
 				r.click();
 			}
-			s.mouseMove(-250, 0);
 		} else {
 			generateReports.setExtentTestFail("betButton image not found");
 			throw new FailedLoginException();
 		}
+		s.mouseMove(-250, 0);
 		waitTimeLong();
 		r.highlightOff();
 	}
@@ -86,6 +87,7 @@ public class SlotsBettingF {
 			String noWin = "Never win";
 			generateReports.setExtentTestSkip(noWin);
 		}
+		s.mouseMove(-250, 0);
 		waitTime("winBetButton");
 		r.highlightOff();
 	}
@@ -104,6 +106,7 @@ public class SlotsBettingF {
 			generateReports.setExtentTestFail("settingsButton image not found");
 			throw new FailedLoginException();
 		}
+		s.mouseMove(-250, 0);
 		waitTime("settingsButton");
 		r.highlightOff();
 	}
@@ -122,6 +125,8 @@ public class SlotsBettingF {
 			generateReports.setExtentTestSkip("betRecordButton2 image not found");
 			throw new FailedLoginException();
 		}
+		s.mouseMove(-250, 0);
+		waitTime("selectBetRecordButton2");
 		r.highlightOff();
 	}
 
