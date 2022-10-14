@@ -102,6 +102,11 @@ public class SlotsBettingF {
 			r = x.grow(100, 100);
 			r.highlight("green");
 			r.click();
+			if(s.find(settingsButton).exists(settingsButton) != null) {
+				s.click(settingsButton);
+			} else {
+				System.out.println("Successfully clicked 1st time");
+			}
 		} else {
 			generateReports.setExtentTestFail("settingsButton image not found");
 			throw new FailedLoginException();
@@ -121,6 +126,11 @@ public class SlotsBettingF {
 			r = x.grow(100, 100);
 			r.highlight("green");
 			r.click();
+			if(s.find(betRecordButton2).exists(betRecordButton2) != null) {
+				s.click(betRecordButton2);
+			} else {
+				System.out.println("Successfully clicked 1st time");
+			}
 		} else {
 			generateReports.setExtentTestSkip("betRecordButton2 image not found");
 			throw new FailedLoginException();
