@@ -27,7 +27,12 @@ public class SelectSlotsGameVendorCQ9 extends UsedVariables {
 			String game = gameList.get(i);
 			selectSlotsGameAndBetF.selectSlotsGame(game);
 			iterateWindow.iterateToSecondWindow();
-			slotsBettingF.doSlotsBet();
+			slotsBettingF.reduceBetAmount();
+			slotsBettingF.selectBetButton();
+			slotsBettingF.selectWinBet();
+			slotsBettingF.selectSettingsButton();
+//			slotsBettingF.selectBetRecordButton();
+			slotsBettingF.selectBetRecordButton2();
 			iterateWindow.iterateToThirdWindow();
 			checkSlotsBetRecordF.selectChangeTimeZone();
 			checkSlotsBetRecordF.selectToday();

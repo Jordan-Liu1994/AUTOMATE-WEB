@@ -2,7 +2,7 @@
 <testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-13T17:34:57 SGT" name="Suite" finished-at="2022-10-13T17:38:54 SGT" duration-ms="236768">
+  <suite started-at="2022-10-14T10:26:13 SGT" name="Suite" finished-at="2022-10-14T10:28:58 SGT" duration-ms="164193">
     <groups>
       <group name="CQ9 Slots">
         <method signature="SelectSlotsGameVendorCQ9.selectSlotsGameVendor(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:xRunnersGames.SelectSlotsGameVendorCQ9@1cb346ea]" name="selectSlotsGameVendor" class="xRunnersGames.SelectSlotsGameVendorCQ9"/>
@@ -11,9 +11,9 @@
         <method signature="LoginAndLogout.login(java.lang.String,java.lang.String)[pri:1, instance:xRunnersAuthentication.LoginAndLogout@52815fa3]" name="login" class="xRunnersAuthentication.LoginAndLogout"/>
       </group> <!-- login -->
     </groups>
-    <test started-at="2022-10-13T17:34:57 SGT" name="Test" finished-at="2022-10-13T17:38:54 SGT" duration-ms="236768">
+    <test started-at="2022-10-14T10:26:13 SGT" name="Test" finished-at="2022-10-14T10:28:58 SGT" duration-ms="164193">
       <class name="xRunnersGames.SelectGameCategory">
-        <test-method signature="selectGameCategory(java.lang.String)[pri:0, instance:xRunnersGames.SelectGameCategory@50313382]" started-at="2022-10-13T17:35:06 SGT" name="selectGameCategory" finished-at="2022-10-13T17:35:13 SGT" duration-ms="6438" status="PASS">
+        <test-method signature="selectGameCategory(java.lang.String)[pri:0, instance:xRunnersGames.SelectGameCategory@50313382]" started-at="2022-10-14T10:26:22 SGT" name="selectGameCategory" finished-at="2022-10-14T10:26:24 SGT" duration-ms="1951" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
         </test-method> <!-- selectGameCategory -->
       </class> <!-- xRunnersGames.SelectGameCategory -->
       <class name="xSetups.Setup">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:xSetups.Setup@3224a577]" started-at="2022-10-13T17:34:55 SGT" name="setup" finished-at="2022-10-13T17:34:57 SGT" duration-ms="1792" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:xSetups.Setup@3224a577]" started-at="2022-10-14T10:26:12 SGT" name="setup" finished-at="2022-10-14T10:26:13 SGT" duration-ms="1589" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -57,13 +57,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:xSetups.Setup@3224a577]" started-at="2022-10-13T17:38:54 SGT" name="tearDown" finished-at="2022-10-13T17:38:55 SGT" duration-ms="1560" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:xSetups.Setup@3224a577]" started-at="2022-10-14T10:28:58 SGT" name="tearDown" finished-at="2022-10-14T10:28:59 SGT" duration-ms="1556" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- xSetups.Setup -->
       <class name="xRunnersGames.SelectSlotsGameVendorCQ9">
-        <test-method signature="selectSlotsGameVendor(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:xRunnersGames.SelectSlotsGameVendorCQ9@1cb346ea]" started-at="2022-10-13T17:35:13 SGT" name="selectSlotsGameVendor" finished-at="2022-10-13T17:38:54 SGT" duration-ms="220827" status="PASS">
+        <test-method signature="selectSlotsGameVendor(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:xRunnersGames.SelectSlotsGameVendorCQ9@1cb346ea]" started-at="2022-10-14T10:26:24 SGT" name="selectSlotsGameVendor" finished-at="2022-10-14T10:28:58 SGT" duration-ms="153804" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -72,7 +72,7 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[鸿福齐天]]>
+                <![CDATA[盘龙秘宝]]>
               </value>
             </param>
             <param index="2">
@@ -91,7 +91,7 @@
         </test-method> <!-- selectSlotsGameVendor -->
       </class> <!-- xRunnersGames.SelectSlotsGameVendorCQ9 -->
       <class name="xRunnersAuthentication.LoginAndLogout">
-        <test-method signature="goToSite(java.lang.String)[pri:0, instance:xRunnersAuthentication.LoginAndLogout@52815fa3]" started-at="2022-10-13T17:34:57 SGT" name="goToSite" finished-at="2022-10-13T17:35:01 SGT" duration-ms="3785" status="PASS">
+        <test-method signature="goToSite(java.lang.String)[pri:0, instance:xRunnersAuthentication.LoginAndLogout@52815fa3]" started-at="2022-10-14T10:26:14 SGT" name="goToSite" finished-at="2022-10-14T10:26:17 SGT" duration-ms="3122" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -102,7 +102,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToSite -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:xRunnersAuthentication.LoginAndLogout@52815fa3]" started-at="2022-10-13T17:35:01 SGT" name="login" finished-at="2022-10-13T17:35:06 SGT" duration-ms="5671" status="PASS">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:1, instance:xRunnersAuthentication.LoginAndLogout@52815fa3]" started-at="2022-10-14T10:26:17 SGT" name="login" finished-at="2022-10-14T10:26:22 SGT" duration-ms="5276" status="PASS">
           <params>
             <param index="0">
               <value>

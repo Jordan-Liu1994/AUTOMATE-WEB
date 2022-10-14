@@ -1,6 +1,0 @@
-"reduceBetAmountButton.png"
-"betRecordButton.png"
-"winBetButton.png"
-"betButton.png"
-"betRecordButton2.png"
-"betRecordDetailButton-1.png"
