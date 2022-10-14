@@ -9,12 +9,10 @@ import org.sikuli.script.Pattern;
 import org.sikuli.script.Region;
 import org.sikuli.script.Screen;
 
-import xCommonUtilities.ActionBuilder;
 import xCommonUtilities.GenerateReports;
 
 public class SlotsBettingF {
 
-	ActionBuilder actionBuilder = new ActionBuilder();
 	GenerateReports generateReports = new GenerateReports();
 
 	String userDir = System.getProperty("user.dir");

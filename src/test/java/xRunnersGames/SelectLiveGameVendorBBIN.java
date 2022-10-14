@@ -14,12 +14,14 @@ public class SelectLiveGameVendorBBIN extends UsedVariables {
 		selectGameCategoryAndVendorF.selectLiveGameVendor(gameVendor);
 		parentWindow = driver.getDriver().getWindowHandle();
 		iterateWindow.iterateToSecondWindow();
-		Thread.sleep(5000);
 		selectLiveBBINGameF.hoverGame();
 		selectLiveBBINGameF.selectGame();
 		iterateWindow.iterateToThirdWindow();
-		Thread.sleep(5000);
-		liveBBINBettingF.doLiveBBINBet();
+		liveBBINBettingF.setBetAmount();
+		liveBBINBettingF.checkAllowBet();
+		liveBBINBettingF.placeBetPosition();
+		liveBBINBettingF.confirmBet();
+		liveBBINBettingF.seletBetRecordButton();
 		iterateWindow.iterateToFourthWindow();
 		iterateWindow.screenShotFinalWindow(gameVendor);
 	}

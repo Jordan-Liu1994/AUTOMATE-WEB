@@ -15,7 +15,7 @@ public class TestSikuliGetRegionImage {
 	public static void main(String[] args) {
 		
 		String userDir = System.getProperty("user.dir");
-		String imageFilePath = userDir + "\\src\\test\\resources\\images\\Slots\\";
+		String imageFilePath = userDir + "\\src\\test\\resources\\images\\LiveBBIN\\";
 		
 		Screen s = new Screen(0);
 		r = s.selectRegion();
@@ -23,7 +23,7 @@ public class TestSikuliGetRegionImage {
 		System.out.println(r);
 
 		try {
-			ImageIO.write(s.capture(r).getImage(), "png", new File(imageFilePath + "betRecordButton2.png"));
+			ImageIO.write(s.capture(r).getImage(), "png", new File(imageFilePath + "betAllow.png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
