@@ -32,7 +32,7 @@ public class SelectGameCategoryAndVendorF {
 	public void selectSlotsGameVendor(String gameVendor) throws FailedLoginException {
 		try {
 			driver.setTimeOut();
-			WebElement element = driver.getDriver().findElement(By.xpath("(//div[contains(@class,'content_block')])[" + gameVendor + "]"));
+			WebElement element = driver.getDriver().findElement(By.xpath("//div[contains(@class,'content_block')][normalize-space()='" + gameVendor + "']"));
 			String elementText = element.getText();
 			if (element.isDisplayed()) {
 				actionBuilder.moveToElementAndClick(element);
@@ -51,6 +51,24 @@ public class SelectGameCategoryAndVendorF {
 		try {
 			driver.setTimeOut();
 			WebElement element = driver.getDriver().findElement(By.xpath("(//div[contains(text(),'" + gameVendor + "')])[2]"));
+			String elementText = element.getText();
+			if (element.isDisplayed()) {
+				actionBuilder.moveToElementAndClick(element);
+				generateReports.setExtentTestInfo(elementText);
+			} else {
+				generateReports.setExtentTestFail(elementText);
+				throw new FailedLoginException();
+			}
+		} catch (NoSuchElementException e) {
+			e.printStackTrace();
+			generateReports.setExtentTestSkip(gameVendor + " skip");
+		}
+	}
+
+	public void selectFishGameVendor(String gameVendor) throws FailedLoginException {
+		try {
+			driver.setTimeOut();
+			WebElement element = driver.getDriver().findElement(By.xpath("//div[contains(text(),'" + gameVendor + "')]"));
 			String elementText = element.getText();
 			if (element.isDisplayed()) {
 				actionBuilder.moveToElementAndClick(element);

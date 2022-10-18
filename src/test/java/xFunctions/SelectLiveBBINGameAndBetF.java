@@ -10,7 +10,7 @@ import xCommonUtilities.ActionBuilder;
 import xCommonUtilities.GenerateReports;
 import xCommonUtilities.Webdrivers;
 
-public class SelectLiveBBINGameF {
+public class SelectLiveBBINGameAndBetF {
 
 	Webdrivers driver = new Webdrivers();
 	GenerateReports generateReports = new GenerateReports();

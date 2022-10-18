@@ -87,6 +87,11 @@ public class Webdrivers {
 		Actions builder = new Actions(driver);
 		builder.moveToElement(element).build().perform();
 	}
+	
+	public void setActionMoveToAndClick(WebElement element) {
+		Actions builder = new Actions(driver);
+		builder.moveToElement(element).click().build().perform();
+	}
 
 	public void closeBrowser() {
 		driver.close();

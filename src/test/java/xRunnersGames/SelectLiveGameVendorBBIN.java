@@ -21,7 +21,7 @@ public class SelectLiveGameVendorBBIN extends UsedVariables {
 		liveBBINBettingF.setBetAmount();
 		liveBBINBettingF.checkAllowBet();
 		liveBBINBettingF.placeBetPosition();
-		liveBBINBettingF.confirmBet();
+//		liveBBINBettingF.confirmBet();
 		liveBBINBettingF.seletBetRecordButton();
 		iterateWindow.iterateToFourthWindow();
 		iterateWindow.screenShotFinalWindow(gameVendor);

@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\Eclipse WorkSpace\AUTOMATE-WEB\games\liveBBINTestng.xml</span>
+                    <span>D:\Eclipse WorkSpace\AUTOMATE-WEB\deposit\offlineDeposit.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,17 +109,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="xRunnersAuthentication.LoginAndLogout" class="method navigator-link" hash-for-method="login(qctestergame001, test123)">login(qctestergame001, test123)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="xRunnersAuthentication.LoginAndLogout" class="method navigator-link" hash-for-method="login(qctestergame002, test123)">login(qctestergame002, test123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="xRunnersGames.SelectGameCategory" class="method navigator-link" hash-for-method="selectGameCategory(4)">selectGameCategory(4)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="xRunnersGames.SelectLiveGameVendorBBIN" class="method navigator-link" hash-for-method="selectLiveGameVendorBBIN(BBIN)">selectLiveGameVendorBBIN(BBIN)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="xRunnersDeposit.OfflineDeposit" class="method navigator-link" hash-for-method="offlineDeposit(qctestergame002, 1231, 测试员, no)">offlineDeposit(qctestergame002, 1231, 测试员, no)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -137,15 +132,15 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">xRunnersGames.SelectLiveGameVendorBBIN</span>
+              <span class="class-name">xRunnersDeposit.OfflineDeposit</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="selectLiveGameVendorBBIN(BBIN)">
-                  </a> <!-- selectLiveGameVendorBBIN(BBIN) -->
-                  <span class="method-name">selectLiveGameVendorBBIN</span>
-                  <span class="parameters">(BBIN)</span>
+                  <a name="offlineDeposit(qctestergame002, 1231, 测试员, no)">
+                  </a> <!-- offlineDeposit(qctestergame002, 1231, 测试员, no) -->
+                  <span class="method-name">offlineDeposit</span>
+                  <span class="parameters">(qctestergame002, 1231, 测试员, no)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -166,26 +161,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="login(qctestergame001, test123)">
-                  </a> <!-- login(qctestergame001, test123) -->
+                  <a name="login(qctestergame002, test123)">
+                  </a> <!-- login(qctestergame002, test123) -->
                   <span class="method-name">login</span>
-                  <span class="parameters">(qctestergame001, test123)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">xRunnersGames.SelectGameCategory</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectGameCategory(4)">
-                  </a> <!-- selectGameCategory(4) -->
-                  <span class="method-name">selectGameCategory</span>
-                  <span class="parameters">(4)</span>
+                  <span class="parameters">(qctestergame002, test123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -193,23 +172,24 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Eclipse WorkSpace\AUTOMATE-WEB\games\liveBBINTestng.xml</span>
+            <span class="header-content">D:\Eclipse WorkSpace\AUTOMATE-WEB\deposit\offlineDeposit.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;parameter name=&quot;number&quot; value=&quot;4&quot;/&gt;
+  &lt;parameter name=&quot;depositAmount&quot; value=&quot;1231&quot;/&gt;
   &lt;parameter name=&quot;password&quot; value=&quot;test123&quot;/&gt;
-  &lt;parameter name=&quot;reportName&quot; value=&quot;LiveBBIN&quot;/&gt;
+  &lt;parameter name=&quot;reportName&quot; value=&quot;OfflineDeposit&quot;/&gt;
   &lt;parameter name=&quot;javaVersion&quot; value=&quot;17 JDK&quot;/&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-  &lt;parameter name=&quot;gameVendor&quot; value=&quot;BBIN&quot;/&gt;
+  &lt;parameter name=&quot;depositName&quot; value=&quot;测试员&quot;/&gt;
   &lt;parameter name=&quot;user&quot; value=&quot;Jordan&quot;/&gt;
   &lt;parameter name=&quot;platform&quot; value=&quot;WEB&quot;/&gt;
+  &lt;parameter name=&quot;joinOrNo&quot; value=&quot;no&quot;/&gt;
   &lt;parameter name=&quot;url&quot; value=&quot;https://wltestmembersite.the777888.com&quot;/&gt;
-  &lt;parameter name=&quot;username&quot; value=&quot;qctestergame001&quot;/&gt;
+  &lt;parameter name=&quot;username&quot; value=&quot;qctestergame002&quot;/&gt;
   &lt;test thread-count=&quot;3&quot; name=&quot;Test&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
@@ -219,8 +199,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;xSetups.Setup&quot;/&gt;
       &lt;class name=&quot;xRunnersAuthentication.LoginAndLogout&quot;/&gt;
-      &lt;class name=&quot;xRunnersGames.SelectGameCategory&quot;/&gt;
-      &lt;class name=&quot;xRunnersGames.SelectLiveGameVendorBBIN&quot;/&gt;
+      &lt;class name=&quot;xRunnersDeposit.OfflineDeposit&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -234,7 +213,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (4 classes)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -245,18 +224,18 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">BBIN Live</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">selectLiveGameVendorBBIN</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
               <span class="test-group-name">login</span>
               <br/>
               <div class="method-in-group">
                 <span class="method-in-group-name">login</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">offlineDeposit</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">offlineDeposit</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -276,23 +255,19 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'selectLiveGameVendorBBIN')
-data.setCell(0, 2, 'xRunnersGames.SelectLiveGameVendorBBIN')
-data.setCell(0, 3, 68013);
+data.setCell(0, 1, 'login')
+data.setCell(0, 2, 'xRunnersAuthentication.LoginAndLogout')
+data.setCell(0, 3, 63952);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'login')
-data.setCell(1, 2, 'xRunnersAuthentication.LoginAndLogout')
-data.setCell(1, 3, 5561);
+data.setCell(1, 1, 'offlineDeposit')
+data.setCell(1, 2, 'xRunnersDeposit.OfflineDeposit')
+data.setCell(1, 3, 4359);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'goToSite')
 data.setCell(2, 2, 'xRunnersAuthentication.LoginAndLogout')
-data.setCell(2, 3, 2752);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'selectGameCategory')
-data.setCell(3, 2, 'xRunnersGames.SelectGameCategory')
-data.setCell(3, 3, 1560);
+data.setCell(2, 3, 3605);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -332,7 +307,7 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">xSetups.Setup</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">setup(LiveBBIN, WEB, chrome, 17 JDK, Jordan)</span>
+                <span class="method-name">setup(OfflineDeposit, WEB, chrome, 17 JDK, Jordan)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
@@ -340,32 +315,25 @@ return data;
               <div class="chronological-class-name">xRunnersAuthentication.LoginAndLogout</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">goToSite(https://wltestmembersite.the777888.com)</span>
-                <span class="method-start">1737 ms</span>
+                <span class="method-start">2440 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">login(qctestergame001, test123)</span>
-                <span class="method-start">4498 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">xRunnersGames.SelectGameCategory</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">selectGameCategory(4)</span>
-                <span class="method-start">10062 ms</span>
+                <span class="method-name">login(qctestergame002, test123)</span>
+                <span class="method-start">6055 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">xRunnersGames.SelectLiveGameVendorBBIN</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">xRunnersDeposit.OfflineDeposit</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">selectLiveGameVendorBBIN(BBIN)</span>
-                <span class="method-start">11623 ms</span>
+                <span class="method-name">offlineDeposit(qctestergame002, 1231, 测试员, no)</span>
+                <span class="method-start">70010 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">xSetups.Setup</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">79662 ms</span>
+                <span class="method-start">74398 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

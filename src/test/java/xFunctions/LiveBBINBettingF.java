@@ -29,7 +29,7 @@ public class LiveBBINBettingF {
 	public void setBetAmount() throws FailedLoginException, FindFailed {
 		s = new Screen(0);
 
-		for (int a = 1; a <= 5; a++) {
+		for (int a = 1; a <= 3; a++) {
 			waitTimeLong();
 		}
 
@@ -46,7 +46,6 @@ public class LiveBBINBettingF {
 			generateReports.setExtentTestFail("betAmount image not found");
 			throw new FailedLoginException();
 		}
-		waitTime("betAmount");
 	}
 
 	public void checkAllowBet() throws FailedLoginException, FindFailed {
@@ -63,7 +62,6 @@ public class LiveBBINBettingF {
 			generateReports.setExtentTestFail("betAllow image not found");
 			throw new FailedLoginException();
 		}
-		waitTime("betAllow");
 	}
 
 	public void placeBetPosition() throws FailedLoginException, FindFailed {
@@ -121,7 +119,7 @@ public class LiveBBINBettingF {
 			r.highlight("green");
 			r.click();
 			s.mouseMove(-250, 250);
-			for (int z = 1; z <= 5; z++) {
+			for (int z = 1; z <= 10; z++) {
 				if (s.exists(betRecordButton) != null) {
 					s.click(betRecordButton);
 					s.mouseMove(500, -250);
@@ -140,7 +138,7 @@ public class LiveBBINBettingF {
 
 	public void waitTimeLong() {
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 			System.out.println("Wait time over");
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -149,7 +147,7 @@ public class LiveBBINBettingF {
 
 	public void waitTime(String x) {
 		try {
-			Thread.sleep(1500);
+			Thread.sleep(2500);
 			System.out.println("Wait time over " + x);
 		} catch (InterruptedException e) {
 			e.printStackTrace();

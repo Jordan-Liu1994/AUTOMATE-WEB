@@ -18,11 +18,11 @@ public class TestSikuli {
 		Screen s = new Screen(0);
 
 		String userDir = System.getProperty("user.dir");
-		String imageFilePath = userDir + "\\src\\test\\resources\\images\\Slots\\";
-		Pattern test = new Pattern(imageFilePath + "reduceBetAmount.png");
+		String imageFilePath = userDir + "\\src\\test\\resources\\images\\FishCQ9\\";
+		Pattern test = new Pattern(imageFilePath + "betButton.png");
 		Pattern test2 = new Pattern(imageFilePath + "betButton.png");
 		Pattern test3 = new Pattern(imageFilePath + "settingsButton.png");
-		Pattern test5 = new Pattern(imageFilePath + "betRecordButton2.png");
+		Pattern test5 = new Pattern(imageFilePath + "fishGameOption一炮捕鱼.png");
 
 //		r = s.newRegion(1322, 571, 100, 75).grow();
 //		r = s.newRegion(x.set(1360, 605), 200, 200).grow();
@@ -35,7 +35,7 @@ public class TestSikuli {
 		s.mouseMove();
 		Location x = Mouse.at();
 		System.out.println(x);
-		Region r = x.grow(100,100);
+		Region r = x.grow();
 //		r = s.
 //		System.out.println(x + " " + y);
 //			int a = 1;

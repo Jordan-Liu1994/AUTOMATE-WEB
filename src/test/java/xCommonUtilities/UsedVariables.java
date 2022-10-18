@@ -1,12 +1,14 @@
 package xCommonUtilities;
 
 import xFunctions.CheckSlotsBetRecordF;
+import xFunctions.FishCQ9BettingF;
 import xFunctions.LiveBBINBettingF;
 import xFunctions.LoginF;
 import xFunctions.LogoutF;
+import xFunctions.OfflineDepositF;
 import xFunctions.RegisterF;
 import xFunctions.SelectGameCategoryAndVendorF;
-import xFunctions.SelectLiveBBINGameF;
+import xFunctions.SelectLiveBBINGameAndBetF;
 import xFunctions.SelectSlotsGameAndBetF;
 import xFunctions.SlotsBettingF;
 import xFunctions.StartDrivers;
@@ -24,11 +26,13 @@ public class UsedVariables {
 	protected RegisterF registerF = new RegisterF();
 	protected SelectGameCategoryAndVendorF selectGameCategoryAndVendorF = new SelectGameCategoryAndVendorF();
 	protected SelectSlotsGameAndBetF selectSlotsGameAndBetF = new SelectSlotsGameAndBetF();
-	protected SelectLiveBBINGameF selectLiveBBINGameF = new SelectLiveBBINGameF();
+	protected SelectLiveBBINGameAndBetF selectLiveBBINGameF = new SelectLiveBBINGameAndBetF();
 	protected IterateWindow iterateWindow = new IterateWindow();
 	protected LiveBBINBettingF liveBBINBettingF = new LiveBBINBettingF();
 	protected SlotsBettingF slotsBettingF = new SlotsBettingF();
 	protected CheckSlotsBetRecordF checkSlotsBetRecordF = new CheckSlotsBetRecordF();
+	protected FishCQ9BettingF fishCQ9BettingF = new FishCQ9BettingF();
+	protected OfflineDepositF offlineDepositF = new OfflineDepositF();
 	
 	protected static String parentWindow;
 }
