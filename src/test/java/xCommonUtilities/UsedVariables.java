@@ -1,5 +1,7 @@
 package xCommonUtilities;
 
+import xFunctions.BOLoginF;
+import xFunctions.BOOfflineDepositF;
 import xFunctions.CheckSlotsBetRecordF;
 import xFunctions.FishCQ9BettingF;
 import xFunctions.LiveBBINBettingF;
@@ -33,6 +35,8 @@ public class UsedVariables {
 	protected CheckSlotsBetRecordF checkSlotsBetRecordF = new CheckSlotsBetRecordF();
 	protected FishCQ9BettingF fishCQ9BettingF = new FishCQ9BettingF();
 	protected OfflineDepositF offlineDepositF = new OfflineDepositF();
+	protected BOLoginF boLoginF = new BOLoginF();
+	protected BOOfflineDepositF boOfflineDepositF = new BOOfflineDepositF();
 	
 	protected static String parentWindow;
 }

@@ -12,7 +12,7 @@ import xCommonUtilities.UsedVariables;
 
 public class LoginAndLogout extends UsedVariables {
 
-	@Test(priority = 0)
+	@Test(priority = 0, groups = { "login" })
 	@Parameters({ "url" })
 	public void goToSite(String url) {
 		generateReports.createTest("goToSite");

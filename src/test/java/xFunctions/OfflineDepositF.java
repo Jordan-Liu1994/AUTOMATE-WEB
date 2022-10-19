@@ -27,12 +27,12 @@ public class OfflineDepositF {
 	}
 
 	public void selectDepositOption() throws FailedLoginException {
-		driver.setTimeOut();
 		WebElement element = driver.getDriver().findElement(By.xpath("//div[@id='change_wallet_notice']//div[@class='nav_label']"));
 		driver.setWait(element);
 		String elementText = element.getText();
 		if (element.isDisplayed()) {
-			driver.setActionMoveToAndClick(element);
+			driver.setActionMoveTo(element);
+			element.click();
 			generateReports.setExtentTestInfo(elementText);
 		} else {
 			generateReports.setExtentTestFail("selectDepositOption failed");
@@ -41,13 +41,15 @@ public class OfflineDepositF {
 	}
 
 	public void selectCloseDepositInfoPopUp() {
-		driver.setTimeOut();
-		WebElement element = driver.getDriver().findElement(By.xpath("//button[@class='btn_major']"));
+		WebElement element = driver.getDriver().findElement(By.xpath("//div[@class='notice_footer']"));
 		driver.setWait(element);
-		String elementText = element.getText();
 		if (element.isDisplayed()) {
-			driver.setActionMoveToAndClick(element);
-			generateReports.setExtentTestInfo(elementText);
+			driver.setActionMoveTo(element);
+			WebElement element2 = driver.getDriver().findElement(By.xpath("//button[@class='btn_major']"));
+			if(element2.isEnabled()) {
+				driver.setActionMoveToAndClick(element2);
+				generateReports.setExtentTestInfo("Deposit popup closed");
+			}
 		} else {
 			generateReports.setExtentTestSkip("selectCloseDepositInfoPopUp failed");
 		}
@@ -133,20 +135,25 @@ public class OfflineDepositF {
 
 		}
 	}
-	
+
+	String elementTextX;
 	public void checkActualAmountReceivedAfterDeposit() {
 		driver.setTimeOut();
-		WebElement element = driver.getDriver().findElement(By.id("actual_amount"));
-		driver.setWait(element);
-		String elementText = element.getText();
-		if (element.isDisplayed()) {
-			driver.setActionMoveTo(element);
-			generateReports.setExtentTestInfo(elementText);
+		WebElement elementX = driver.getDriver().findElement(By.id("actual_amount"));
+		driver.setWait(elementX);
+		String elementTextX = elementX.getText();
+		if (elementX.isDisplayed()) {
+			driver.setActionMoveTo(elementX);
+			generateReports.setExtentTestInfo(elementTextX);
 		} else {
 			generateReports.setExtentTestFail("checkActualAmountReceivedAfterDeposit failed");
 		}
 	}
 	
+	public String savedActualAmountReceivedAfterDeposit() {
+		return elementTextX;
+	}
+
 	public void selectDepositButton() {
 		driver.setTimeOut();
 		WebElement element = driver.getDriver().findElement(By.id("payment"));

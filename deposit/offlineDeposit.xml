@@ -9,6 +9,7 @@
 	<parameter name="browser" value="chrome"></parameter>
 
 	<parameter name="username" value="qctestergame002"></parameter>
+	<parameter name="usernameBO" value="automationTester001"></parameter>
 	<parameter name="password" value="test123"></parameter>
 	<parameter name="depositAmount" value="1231"></parameter>
 	<parameter name="depositName" value="测试员"></parameter>
@@ -16,19 +17,23 @@
 
 	<parameter name="url"
 		value="https://wltestmembersite.the777888.com"></parameter>
+	<parameter name="urlBO"
+		value="https://wltestbo.the777888.com/"></parameter>
 
 	<test thread-count="3" name="Test">
 		<groups>
 			<run>
-				<!-- <exclude name="login"></exclude> -->
+				<exclude name="login"></exclude>
 				<exclude name="logout"></exclude>
-				<!-- <exclude name="register"></exclude> -->
+				<exclude name="offlineDeposit"></exclude>
 			</run>
 		</groups>
 		<classes>
 			<class name="xSetups.Setup" />
 			<class name="xRunnersAuthentication.LoginAndLogout" />
 			<class name="xRunnersDeposit.OfflineDeposit" />
+			<class name="xRunnersDeposit.LoginBO" />
+			<class name="xRunnersDeposit.OfflineDepositBO" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="password" value="test123"/>
+  <parameter name="depositAmount" value="1231"/>
   <parameter name="reportName" value="OfflineDeposit"/>
   <parameter name="javaVersion" value="17 JDK"/>
-  <parameter name="browser" value="chrome"/>
-  <parameter name="user" value="Jordan"/>
+  <parameter name="usernameBO" value="automationTester001"/>
+  <parameter name="depositName" value="测试员"/>
   <parameter name="platform" value="WEB"/>
   <parameter name="url" value="https://wltestmembersite.the777888.com"/>
+  <parameter name="password" value="test123"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="urlBO" value="https://wltestbo.the777888.com/"/>
+  <parameter name="user" value="Jordan"/>
+  <parameter name="joinOrNo" value="no"/>
   <parameter name="username" value="qctestergame002"/>
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
+        <exclude name="login"/>
         <exclude name="logout"/>
+        <exclude name="offlineDeposit"/>
       </run>
     </groups>
     <classes>
-      <class name="xRunnersDeposit.OfflineDeposit">
+      <class name="xRunnersDeposit.OfflineDepositBO">
         <methods>
-          <include name="offlineDeposit" invocation-numbers="0"/>
+          <include name="offlineDepositBO" invocation-numbers="0"/>
         </methods>
-      </class> <!-- xRunnersDeposit.OfflineDeposit -->
+      </class> <!-- xRunnersDeposit.OfflineDepositBO -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
